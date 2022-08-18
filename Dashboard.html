@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 </head>
 <body>
@@ -137,7 +137,7 @@
 
         <!----left start circle---->
             <div class="col-md-6 col-lg-4 text-center">
-                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                <div id="myChart" style="width:100%; max-width:400px; height:400px;"></div>
             </div>
             
         <!----left end- circle--->
@@ -150,7 +150,7 @@
 
 <section class="Web Version">
     <div class="condainer-fluid">
-        <div class="row mx-5 mt-1 g-5 mb-5">
+        <div class="row mx-5 g-5">
             <div class="col-md-6 col-lg-7 ms-5">
                 <h5>Web Version</h5>
                 <div class="bg-gray p-4 mt-4">
@@ -213,7 +213,7 @@
             <div class="col-md-6 col-lg-4">
                 <h5>Test Run</h5>
                 <div class="image mt-4">
-                    <img src="./image/graph.png">
+                    <div id="myChartbar" style="width:100%; max-width:600px; height:350px;"></div>
                 </div>
             </div>
 
@@ -224,32 +224,32 @@
   <!----Analytics Overview end-->
   
   <script>
-    var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-    var yValues = [55, 49, 44, 24, 15];
-    var barColors = [
-      "#b91d47",
-      "#00aba9",
-      "#2b5797",
-      "#e8c3b9",
-      "#1e7145"
-    ];
-    
-    new Chart("myChart", {
-      type: "doughnut",
-      data: {
-        labels: xValues,
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: "Our Annual Testing Report"
-        }
-      }
-    });
+   google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+  ['Contry', 'Mhl'],
+  ['Italy',55],
+  ['France',49],
+  ['Spain',44],
+  ['USA',24],
+  ['Argentina',15]
+]);
+
+var options = {
+  title:'our Annual Test Report'
+};
+
+var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+  chart.draw(data, options);
+
+  var chartbar = new google.visualization.BarChart(document.getElementById('myChartbar'));
+  chartbar.draw(data, options);
+
+}
+
+
     </script>
 
 
