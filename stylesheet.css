@@ -174,3 +174,7 @@
     align-items: center;
     text-align: center;
 }
+
+.btn-secondarydelete{
+    background-color: #E6E7E8;
+}
