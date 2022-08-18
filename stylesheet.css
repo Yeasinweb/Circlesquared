@@ -143,3 +143,19 @@
     color: black;
     font-weight: 500;
 }
+
+.bg_dark{
+    background-color: #AFAFAF;
+}
+
+.bg_black{
+    background-color: #424242;
+}
+
+.bg_cyan{
+    background-color: #B1CAFD;
+}
+
+.bg_cyan_dark{
+    background-color: #4F82EC;
+}
