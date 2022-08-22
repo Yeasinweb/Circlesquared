@@ -193,8 +193,10 @@
 
             <div class="col-md-6 col-lg-3">
                 <div class="add_test d-flex align-items-center">
+                  <button type="button" class="btn d-flex text-center align-items-center" data-bs-toggle="modal" data-bs-target="#Add_Test">
                     <a class="text-decoration-none text-reset" href="#"><img src="./image/plus.svg"></a>
                     <h6 class="ms-3">Add Test</h6>
+                  </button>
                 </div>
             </div>
 
@@ -235,8 +237,10 @@
 
             <div class="col-md-6 col-lg-3">
                 <div class="add_test d-flex align-items-center">
+                  <button type="button" class="btn d-flex text-center align-items-center" data-bs-toggle="modal" data-bs-target="#Add_Test">
                     <a class="text-decoration-none text-reset" href="#"><img src="./image/plus.svg"></a>
                     <h6 class="ms-3">Add Test</h6>
+                  </button>
                 </div>
             </div>
 
@@ -276,8 +280,10 @@
 
             <div class="col-md-6 col-lg-3">
                 <div class="add_test d-flex align-items-center">
+                  <button type="button" class="btn d-flex text-center align-items-center" data-bs-toggle="modal" data-bs-target="#Add_Test">
                     <a class="text-decoration-none text-reset" href="#"><img src="./image/plus.svg"></a>
                     <h6 class="ms-3">Add Test</h6>
+                  </button>
                 </div>
             </div>
 
@@ -778,7 +784,7 @@
 
 <!--------Add Step start -->
 
-<div class="row mt-3 border-bottom pb-3">
+<div class="row mt-3 pb-3">
   <div class="col-md-12 d-flex">
    <img class="me-2" src="./image/add_plus.svg"> Add Step
   </div>
@@ -798,6 +804,20 @@
 
 
 
+
+
+
+    
+
+
+                  
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-secondary">Save and create another</button>
+            <button type="button" class="btn btn-primary">Add Test</button>
+            
+          </div>
 
 <!--------Test Case Steps with gherkin start -->
 
@@ -824,16 +844,97 @@
 </div>
 <!--------Test Case Steps  end -->
 
+           <!-------Textarea  start-->
+
+     <div class="row mt-4">
+      <div class="col-md-12">
+          <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2"></label>
+            </div>
+      </div>
+  </div>
+  <!-------Textarea  end-->
+
+   <!-------- Raw + Steps Test Case Steps with gherkin start -->
+
+   <div class="row mt-4">
+    <div class="col-md-10 d-flex align-items-center">
+        <h6 class="me-3">Test Case Steps</h6>
+        <div class="mb-0">
+            <div class="input-group">
+                <select class="form-select form-select-sm" id="inputGroupSelect04" aria-label="Example select with button addon">
+                  <option selected>Classic</option>
+                  <option value="2">Gherkin</option>
+                </select>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 d-flex align-items-center">
+         <p class="mt-2 me-2">Raw</p>
+        <div class="form-check form-switch text-end">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+          </div>
+          <p class="mt-3">Steps</p>
+    </div>
+</div>
+<!--------Raw + Steps Test Case Steps  end -->
+
+<!-------Raw + Steps  start-->
+
+<div class="row mt-4">
+  <div class="col-md-2 d-flex">
+      <h6 class="me-3">1</h6>
+      <div class="mb-0">
+          <div class="input-group">
+              <select class="form-select form-select-sm" id="inputGroupSelect04" aria-label="Example select with button addon">
+                <option selected>Given</option>
+                <option value="2">When</option>
+                <option selected>Then</option>
+                <option value="2">And</option>
+                <option value="2">But</option>
+              </select>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-9">
+      <input type="text" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Empty value">
+  </div>
+  <div class="col-md-1">
+      <img src="./image/delete.svg">
+  </div>
+</div>
+
+<!------2 line-->
+<div class="row mt-4">
+  <div class="col-md-2 d-flex">
+      <h6 class="me-3">1</h6>
+      <div class="mb-0">
+          <div class="input-group">
+              <select class="form-select form-select-sm" id="inputGroupSelect04" aria-label="Example select with button addon">
+                <option selected>Given</option>
+                <option value="2">When</option>
+                <option selected>Then</option>
+                <option value="2">And</option>
+                <option value="2">But</option>
+              </select>
+        </div>
+      </div>
+  </div>
+  <div class="col-md-9">
+      <input type="text" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Empty value">
+  </div>
+  <div class="col-md-1">
+      <img src="./image/delete.svg">
+  </div>
+</div>
 
 
-                  
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-            <button type="button" class="btn btn-secondary">Save and create another</button>
-            <button type="button" class="btn btn-primary">Add Test</button>
-            
-          </div>
+<!-------Raw + Steps start-->
+
+
+
         </div>
       </div>
     </div>
