@@ -192,3 +192,11 @@
 .formcolor{
     background-color:#f1f2f2;
 }
+
+.widthsize{
+    width: 500px;
+}
+
+.fw-semibold{
+    font-weight: 500;
+}
