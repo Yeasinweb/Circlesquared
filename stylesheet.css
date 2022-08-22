@@ -200,3 +200,11 @@
 .fw-semibold{
     font-weight: 500;
 }
+
+.margingtop{
+    margin-top: 250px;
+}
+
+.borderdot{
+    border: #4F82EC dotted 1px;
+}
