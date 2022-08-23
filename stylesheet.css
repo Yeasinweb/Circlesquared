@@ -223,3 +223,16 @@
 .bgfill{
     background-color: #F4F5F7;
 }
+
+.Test_image{
+    background-color: #D8D8D8;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding: 20px 0 0 10px;
+    margin-top: 60px;
+}
+
+.margintop_drag{
+    margin-top: 100px;
+}
