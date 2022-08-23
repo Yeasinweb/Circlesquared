@@ -201,10 +201,21 @@
     font-weight: 500;
 }
 
-.margingtop{
+.margintop{
     margin-top: 250px;
 }
 
 .borderdot{
     border: #4F82EC dotted 1px;
+}
+
+.manager{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    padding: 29px 0 0 0;
+    background-color: #999999;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
 }
