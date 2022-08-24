@@ -273,7 +273,11 @@
 }
 
 .sixe_profile_edit{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background-color: #999999;
+}
+
+.fillcoloredit{
+    background-color: #F4F5F7;
 }
