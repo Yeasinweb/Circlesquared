@@ -148,7 +148,10 @@
                                                 <img src="./image/vertical_menu2.svg">
                                             </button>
                                             <ul class="dropdown-menu">
-                                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#edit_modal">
+                                                    <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                  </button>
+                                              
                                               <li><a class="dropdown-item" href="#">Clone</a></li>
                                               <li><a class="dropdown-item" href="#">Delete</a></li>
                                             </ul>
@@ -602,7 +605,38 @@
     </div>
   </div>       
 
+                <!----------edit modal-->
 
+                <div class="modal fade" id="edit_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Suite Edit</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Suite name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Milestone</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <label for="exampleInputEmail1" class="form-label">Description</label>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                              </div>
+                            
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
 
 
