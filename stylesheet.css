@@ -278,8 +278,3 @@
 .accordion-button:not(.collapsed)::after {
     background-image: url();
 }
-
-.accordion-header {
-    margin-bottom: 0;
-    background-color: white;
-}
