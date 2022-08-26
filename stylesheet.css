@@ -247,25 +247,6 @@
     color: white;
     font-size: 12px;
 }
-/*******
-.profile_image{
-    position: relative;
-}
-
-.edit{
-    width: 30px;
-    height: 30px;
-    color: white;
-    background-color: #4F82EC;
-    border-radius: 50%;
-    margin-top: 70px;
-    padding: 5px 8px;
-    margin-left: 80px;
-    position: absolute;
-    font-size: 12px;
-}
-
-***/
 
 .sixe_profile{
     width: 130px;
@@ -284,4 +265,17 @@
 
 .Suite_Edit{
     background-color: #E6E7E8;
+}
+
+.accordion-button::after {
+    background-image: url();
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url();
+}
+
+.accordion-header {
+    margin-bottom: 0;
+    background-color: white;
 }
