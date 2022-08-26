@@ -278,3 +278,13 @@
 .accordion-button:not(.collapsed)::after {
     background-image: url();
 }
+
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color:white;
+    box-shadow: none;
+}
+
+.accordion-button:hover {
+    z-index:none;
+}
