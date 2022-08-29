@@ -288,3 +288,10 @@
 .accordion-button:hover {
     z-index:none;
 }
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color:white;
+    outline: 0;
+    box-shadow: none;
+}
