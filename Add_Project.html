@@ -29,7 +29,7 @@
                                 <label class="form-check-label" for="flexCheckDefault">
                                 </label>
                               </div>
-                              <img class="ms-5" src="./image/menu.svg">
+                              <button class="btn border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" ><img class="ms-5" src="./image/menu.svg"></button>
                         </div>
                     </div>
                 </div>
@@ -60,49 +60,54 @@
             </div>
 
             <div class="row mx-5 mt-4">
-                <div class="col-md-8">
-                    <h4>Add Project</h4>
-                </div>
-
-                <div class="col-md-4 m-0 p-0">
-                 
-                    <nav class="navbar navbar-expand-lg bg-primary">
-                      <div class="container">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                          <ul class="navbar-nav gap-4">
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle text-white  fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Project
-                              </a>
-                              <ul class="dropdown-menu mt-2">
-                                <li><a class="dropdown-item" href="My_Projects.html">My Project</a></li>
-                                <li><a class="dropdown-item" href="#">Add Project</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link text-white fw-semibold" href="#">Test Suite</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link text-white fw-semibold" href="#">Test Case</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link text-white fw-semibold" href="#">Run</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link text-white fw-semibold" href="#">Defect</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link text-white fw-semibold" href="#">Apps</a>
-                            </li>
-                          </ul>
+              <div class="col-md-8">
+                  <h4>Add Project</h4>
+              </div>
+        
+              <div class="col-md-4 m-0 p-0">
+               
+                  <div class="offcanvas" id="offcanvasTop" data-bs-backdrop="false">
+                   
+                    <div class="offcanvas-body">
+                      <nav class="navbar navbar-expand-md bg-primary">
+                        <div class="container">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav gap-4">
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white  fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Project
+                                </a>
+                                <ul class="dropdown-menu mt-2">
+                                  <li><a class="dropdown-item" href="My_Projects.html">My Project</a></li>
+                                  <li><a class="dropdown-item" href="#">Add Project</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" href="#">Test Suite</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" href="#">Test Case</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" href="#">Run</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" href="#">Defect</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" href="#">Apps</a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                      </div>
-                    </nav>
+                      </nav>
+                    </div>
                   </div>
-            </div>
+                </div>
+          </div>
             
         </div> 
     </section>
