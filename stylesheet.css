@@ -333,3 +333,8 @@
     transition: transform .3s ease-in-out;
     font-size: 15px;
 }
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow:none;
+}
