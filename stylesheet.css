@@ -345,3 +345,8 @@
 .navheight{
     height: 90px;
 }
+
+.card-body {
+    flex: 1 1 auto;
+    padding:0;
+}
