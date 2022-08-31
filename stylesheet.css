@@ -337,6 +337,7 @@
     box-shadow:none;
 }
 
-.navheight{
-    height: 55px;
+.checkheight{
+    height: 30px;
+    width: 30px;
 }
