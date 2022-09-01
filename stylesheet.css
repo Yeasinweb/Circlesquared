@@ -271,6 +271,14 @@
     background-color: #F4F5F7;
 }
 
+.fillcolorproject{
+    background-color: #f1f2f2;
+}
+
+.fillcolorproject:hover{
+    background-color: #e6e7e8;
+}
+
 .Suite_Edit{
     background-color: #E6E7E8;
 }
