@@ -354,3 +354,20 @@
     flex: 1 1 auto;
     padding:0;
 }
+
+.body_edit_run{
+    width: 750px;
+    height: 400px;
+    background-color: #F6F9FE;
+    border:1px dashed #AFAFAF;
+    margin: auto;
+}
+
+.underlineupload::after {
+    width: 90px;
+    height: 1px;
+    background-color: #424242;
+    content:"";
+    display: block;
+    margin: 10px 0 0 0;
+}
