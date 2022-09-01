@@ -115,43 +115,102 @@
               </div> 
           </section>
     
-<!--------Project Settings start -->
+<!--------Edit test run start -->
 	
 <section class="Edit test run">
     <div class="container-fluid">
-        <div class="row mx-5 mt-5">
 
+        <div class="row mx-5 mt-5">
                     <div class="col-md">
                         <div class="#">
                             <label for="exampleInputEmail1" class="form-label">Run title</label>
-                            <input type="type" class="form-control border-0 formcolor" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Test run 2022/06/17">
+                            <input type="type" class="form-control border-0 formcolor_run" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Test run 2022/09/01">
                         </div>
                     </div>
         </div>
 
         <div class="row mx-5 mt-4">
-            
             <div class="col-md">
                 <label for="exampleInputEmail1" class="form-label"> Description</label>
                 <div class="form-floating">
-                    <textarea class="form-control border-0 formcolor" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <textarea class="form-control border-0 formcolor_run" id="floatingTextarea2" style="height: 100px"></textarea>
                   </div>
             </div>
         </div>
 
         <div class="row mx-5 mt-4">
-            
             <div class="col-md">
                 <div class="#">
                     <label for="exampleInputEmail1" class="form-label">Milestone</label>
-                    <input type="type" class="form-control border-0 formcolor" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Release" placeholder="Test run 2022/06/17">
+                    <input type="type" class="form-control border-0 formcolor_run" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Release" placeholder="Test run 2022/06/17">
                   </div>
             </div>
+        </div>
 
+        <div class="row mx-5 mt-4">
+            <div class="col-md">
+                <div class="#">
+                    <label for="exampleInputEmail1" class="form-label">Tags</label>
+                    <input type="type" class="form-control border-0 formcolor_run" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+            </div>
+        </div>
+
+        <div class="row mx-5 mt-4 border-bottom py-2">
+            <div class="col-md">
+                <div class="#">
+                    <h6>Configurations</h6>
+                 </div>
+            </div>
+        </div>
+
+        <div class="row mx-5 mt-4">
+            <div class="col-md">
+                <div class="#">
+                    <label for="exampleInputEmail1" class="form-label">Rootnext</label>
+                    <input type="type" class="form-control border-0 formcolor_run" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buynoir">
+                  </div>
+            </div>
+        </div>
+
+        <div class="row mx-5 mt-4 border-bottom py-2">
+            <div class="col-md">
+                <div class="#">
+                    <h6>Test cases</h6>
+                 </div>
+            </div>
+        </div>
+
+        <div class="row mx-5 mt-4">
+            <div class="col-md">
+                <div class="#">
+                    <h6>7 test cases selected</h6>
+                 </div>
+            </div>
+        </div>
+
+        <div class="row mx-5 mt-4">
+            <div class="col-md">
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <div class=""><img src="./image/plus45.svg"></div>
+                        <div class=""><h6 class="ms-3">Add cases</h6></div>
+                      </button>
+                 </div>
+            </div>
+        </div>
+
+        <div class="row mx-5 mt-4 border-bottom">
+            <div class="col-md">
+                
+            </div>
         </div>
 
 
-        <div class="row mx-5 mt-5">
+
+
+
+        <div class="row mx-5 mt-5 mb-5">
             <div class="col-md-6 col-lg-3">
            <a href="testrun.html"> <button type="button" class="btn btn-dark">Save</button></a>
             <button type="button" class="btn btn-secondarydelete  ms-3">Cancel</button>
@@ -163,8 +222,32 @@
     </div>
 </section> 
 
-  <!----my project end-->
+  <!----Edit test run end-->
 
+  <!-- Button trigger modal -->
+
+  
+  <!-- Modal start -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal end-->
 
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
