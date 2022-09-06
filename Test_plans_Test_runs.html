@@ -120,10 +120,9 @@
     <div class="container-fluid">
       <div class="row mx-5 mt-4 border-bottom">
         <div class="col-md-6 col-lg-12 d-flex m-0 p-0">
-          <div class="#"><a href="#" class="text-decoration-none  how_details"><h6>Details</h6></a></div>
-           <div class=""><a href="Test_plans_Test_Cases.html" class="text-decoration-none text-reset"><h6 class="ms-5">Test Cases</h6></a></div>
-          <div class=""><a href="Test_plans_Test_runs.html" class="text-decoration-none text-reset"><h6 class="ms-5">Test runs</h6></a></div>
-          
+            <div class="#"><a href="Test_plans_view.html" class="text-decoration-none text-reset"><h6>Details</h6></a></div>
+            <div class="ms-5"><a href="Test_plans_Test_Cases.html" class="text-decoration-none text-reset"><h6>Test Cases</h6></a></div>
+           <div class="ms-5"><a href="#" class="text-decoration-none how_details"><h6>Test runs</h6></a></div>
         </div>
       </div>
     </div>
@@ -131,11 +130,61 @@
 
   <section class="details">
     <div class="container-fluid">
-        <div class="row mx-5 mt-3">
-            <div class=""></div>
-            <p class=" m-0 p-0">Description</p>
-            <p class=" m-0 p-0">Root next 229</p>
+        <div class="row mx-5 mt-3 align-items-center">
+            <div class=" col-md-6 col-lg-2 m-0 p-0 mt-1">
+                <input class="form-control" type="text" placeholder="Search for test case" aria-label=".form-control-lg example">
+            </div>
+            <div class=" col-md-6 col-lg-10 m-0 p-0 mt-1">
+                <h6 class="ms-3"> + Add filter</h6>
+            </div>
         </div>
+
+        <div class="row mx-5 mt-4">
+            <div class="col-md-6 col-lg-12 m-0 p-0">
+                <div class="row mt-2">
+                    <div class="col-md-6 col-lg-4">
+                        <p>Title</p>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <p>Author</p>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <p>Time</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <p>Status</p>
+                    </div>
+                </div>
+                <!------->
+                <div class="row mt-1">
+                    <div class="col-md-6 col-lg-4">
+                        <h6>Test run 2022/06/17</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <p>Shahin Sarkar</p>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <p>00:15:25</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+                            Tooltip on top
+                          </button>
+                          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+                            Tooltip on right
+                          </button>
+                          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Tooltip on bottom">
+                            Tooltip on bottom
+                          </button>
+                          <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
+                            Tooltip on left
+                          </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
   </section>
 

@@ -403,3 +403,7 @@
     background-color:#0c63e4;
     margin-top:10px;
 }
+
+.Authorization_test_run:hover{
+    background-color: #f1f2f2;
+}
