@@ -394,3 +394,12 @@
     border-bottom: 0;
     border-left: 0;
 }
+
+.how_details::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color:#0c63e4;
+    margin-top:10px;
+}
