@@ -407,3 +407,7 @@
 .Authorization_test_run:hover{
     background-color: #f1f2f2;
 }
+
+.Authorization.accordion-button:not(.collapsed) img{
+    transform: rotate(180deg);
+}
