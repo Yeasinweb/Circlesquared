@@ -122,7 +122,9 @@
         <div class="row mx-5 mt-3 align-items-center">
 
             <div class=" col-md-6 col-lg-2 mt-1">
-                <button type="button" class="btn btn-primary">Invite new member</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Invite new member
+              </button>
             </div>
             <div class=" col-md-6 col-lg-2 mt-1">
                 <input class="form-control" type="text" placeholder="Search for team member" aria-label=".form-control-lg example">
@@ -237,11 +239,213 @@
 
 
 
-  
+  <!-- Button trigger modal -->
 
 
+<!-- Modal -->
+<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!------
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+----->
+      <div class="modal-body p-4">
+          <div class="row">
+            <h4>Invite new user</h4>
+          </div>
+          <div class="row mt-3">
+            
+                    <div class="col-md-auto">
+                        <a class="text-decoration-none text-reset" href="#"><h6>Single</h6></a>
+                     </div>
+
+                     <div class="col-md-auto ms-5">
+                      
+                      <button type="button" class="btn m-0 p-0" data-bs-toggle="modal" data-bs-target="#Bulk">
+                        <h6>Bulk</h6>
+                      </button> 
+                     
+                     </div>
+          </div>
+
+           <div class="row mt-3">
+                <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"><small>Name</small></label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="khan">
+                </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"><small>Email</small> </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="yeasin@gmail.com"> 
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"> <small>Role title</small></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Senior QSA">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"> <small>Role title</small></label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Member Defult</option>
+                      <option value="1">Administrator</option>
+                    </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-auto mt-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Read only
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-auto mt-2">
+              <small> <p class="text-muted">Read-only users don't count as a regular users (are not billed) and have only a read access (based on the role settings).</p> </small>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-auto mt-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Access
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-auto mt-2">
+              <small> <p class="text-muted">A user will receive access to all private projects in your workspace.</p> </small>
+            </div>
+          </div>
 
 
+      </div>
+
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Invite</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-------->
+
+<!-------modal 2-->
+
+<div class="modal fade mt-5" id="Bulk" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-----
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        ----->
+      <div class="modal-body p-4">
+        
+        <div class="row">
+          <h4>Invite new user</h4>
+        </div>
+        <div class="row mt-3">
+          
+          <div class="col-md-auto">
+            <button type="button" class="btn m-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <h6>Single</h6>
+            </button>
+            </div>
+
+            <div class="col-md-auto ms-5">
+            
+            <button type="button" class="btn m-0 p-0" data-bs-toggle="modal" data-bs-target="#Bulk">
+              <h6>Bulk</h6>
+            </button> 
+            
+            </div>
+        </div>
+
+
+        <div class="row">
+          <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"> <small>Role title</small></label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Member Defult</option>
+                    <option value="1">Administrator</option>
+                  </select>
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"><small>Email list</small></label>
+                  <div class="form-floating">
+                    <textarea class="form-control form-control-lg" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-auto mt-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Read only
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-auto mt-2">
+            <small> <p class="text-muted">Read-only users don't count as a regular users (are not billed) and have only a read access (based on the role settings).</p> </small>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-auto mt-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Access
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-auto mt-2">
+            <small> <p class="text-muted">A user will receive access to all private projects in your workspace.</p> </small>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
