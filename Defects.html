@@ -234,13 +234,15 @@
                                           <img src="./image/menu_list.svg">
                                         </button>
                                         <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="#">View</a></li>
+                                          <li><a class="dropdown-item" href="defect_details.html">View</a></li>
                                           <li><a class="dropdown-item" href="#">Assign to me</a></li>
                                           <li><a class="dropdown-item" href="#">In Progress</a></li>
                                           <li><a class="dropdown-item" href="#">Resolve</a></li>
                                           <li><a class="dropdown-item" href="#">Invalid</a></li>
                                           <li><a class="dropdown-item" href="#">Edit</a></li>
-                                          <li><a class="dropdown-item" href="#">Delete</a></li>
+                                          <li><a class="dropdown-item" href="#"><button type="button" class="btn m-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Delete
+                                          </button></a></li>
                                         </ul>
                                       </div>
                                 </div>
@@ -275,13 +277,15 @@
                                         <img src="./image/menu_list.svg">
                                       </button>
                                       <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">View</a></li>
+                                        <li><a class="dropdown-item" href="defect_details.html">View</a></li>
                                         <li><a class="dropdown-item" href="#">Assign to me</a></li>
                                         <li><a class="dropdown-item" href="#">In Progress</a></li>
                                         <li><a class="dropdown-item" href="#">Resolve</a></li>
                                         <li><a class="dropdown-item" href="#">Invalid</a></li>
                                         <li><a class="dropdown-item" href="#">Edit</a></li>
-                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                        <li><a class="dropdown-item" href="#"><button type="button" class="btn m-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                          Delete
+                                        </button></a></li>
                                       </ul>
                                     </div>
                               </div>
@@ -316,13 +320,15 @@
                                         <img src="./image/menu_list.svg">
                                       </button>
                                       <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">View</a></li>
+                                        <li><a class="dropdown-item" href="defect_details.html">View</a></li>
                                         <li><a class="dropdown-item" href="#">Assign to me</a></li>
                                         <li><a class="dropdown-item" href="#">In Progress</a></li>
                                         <li><a class="dropdown-item" href="#">Resolve</a></li>
                                         <li><a class="dropdown-item" href="#">Invalid</a></li>
                                         <li><a class="dropdown-item" href="#">Edit</a></li>
-                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                        <li><a class="dropdown-item" href="#"><button type="button" class="btn m-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                          Delete
+                                        </button></a></li>
                                       </ul>
                                     </div>
                               </div>
@@ -357,13 +363,15 @@
                                         <img src="./image/menu_list.svg">
                                       </button>
                                       <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">View</a></li>
+                                        <li><a class="dropdown-item" href="defect_details.html">View</a></li>
                                         <li><a class="dropdown-item" href="#">Assign to me</a></li>
                                         <li><a class="dropdown-item" href="#">In Progress</a></li>
                                         <li><a class="dropdown-item" href="#">Resolve</a></li>
                                         <li><a class="dropdown-item" href="#">Invalid</a></li>
                                         <li><a class="dropdown-item" href="#">Edit</a></li>
-                                        <li><a class="dropdown-item" href="#">Delete</a></li>
+                                        <li><a class="dropdown-item" href="#"><button type="button" class="btn m-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                          Delete
+                                        </button></a></li>
                                       </ul>
                                     </div>
                               </div>
@@ -371,6 +379,33 @@
           </div>
   </div>
 </section>
+
+
+<!-- Modal -->
+<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <div class="row">
+          <div class=" d-flex">
+            <img src="./image/error-01.svg">
+            <h5 class="ms-3">Delete defect</h5>
+          </div>
+          <p class="mt-4">Are you sure, that you want delete defect "[D-1]"?</p>
+        </div>
+      </div>
+      <div class="modal-footer p-4">
+        <button type="button" class="btn fillcolorproject" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
