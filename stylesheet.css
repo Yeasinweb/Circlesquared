@@ -440,6 +440,7 @@
 }
 
 .appshover {
+    width:575px;
     border: #ededee solid 1px;
     border-radius: 10px;
     text-align: start;
