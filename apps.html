@@ -130,7 +130,7 @@
     <div class="container-fluid">
         <div class="row mx-5 mt-3 gap-4 d-flex justify-content-between">
           
-                <div class="col-md-4 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="col-md-6 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="asana">
                         <img src="./image/asana 1.svg">
                     </div>
@@ -139,7 +139,7 @@
                     <p>Asana is a software-as-a-service designed to improve team collaboration and work management.</p>
                  </div>
 
-                 <div class="col-md-4 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 <div class="col-md-6 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="asana">
                         <img src="./image/trello-app 1.svg">
                     </div>
@@ -148,7 +148,7 @@
                     <p>Asana is a software-as-a-service designed to improve team collaboration and work management.</p>
                  </div>
 
-                 <div class="col-md-4 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 <div class="col-md-6 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="asana">
                         <img src="./image/slack 1.svg">
                     </div>
@@ -166,7 +166,7 @@
     <div class="container-fluid">
         <div class="row mx-5 mt-3 gap-4 d-flex justify-content-between">
           
-                <div class="col-md-4 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="col-md-6 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="asana">
                         <img src="./image/jira-cloud 1.svg">
                     </div>
@@ -175,7 +175,7 @@
                     <p>Asana is a software-as-a-service designed to improve team collaboration and work management.</p>
                  </div>
 
-                 <div class="col-md-4 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 <div class="col-md-6 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="asana">
                         <img src="./image/jira-server 1.svg">
                     </div>
@@ -184,7 +184,7 @@
                     <p>Asana is a software-as-a-service designed to improve team collaboration and work management.</p>
                  </div>
 
-                 <div class="col-md-4 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 <div class="col-md-6 col-lg-4 p-4 appshover "button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="asana">
                         <img src="./image/github-app 1.svg">
                     </div>
@@ -201,20 +201,55 @@
 
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg ">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+<!-----
+        <div class="modal-header p-5">
+          <h5>Modal title</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          ...
+--->
+        <div class="modal-body p-5">
+
+          <div class="row align-items-center border-bottom pb-3">
+            <div class="col-md-6 col-lg-2">
+                <img src="./image/asana 1.svg">
+            </div>
+            <div class="col-md-6 col-lg-10">
+                <h5>Asana</h5>
+                <p>By  Buynoir Inc</p>
+                <p>Asana is a software-as-a-service designed to improve team collaboration and work management.</p>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-6 col-lg-12">
+                <p>Setup integration with Asana and make all of your Qase defects get captured as a Asana issue. Add attachments to new defect and they
+                    will be uploaded to Asana as well. </p>
+                <h6>What application can do:</h6>
+                <ul>
+                    <li>Create new issues in Asana</li>
+                    <li>Update issue status</li>
+                    <li>Link Asana issue with test cases</li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-md-6 col-lg-12">
+                <a href="#"> <button type="button" class="btn btn-dark">Install Now</button></a>
+                 <button type="button" class="btn btn-secondarydelete  ms-3">Cancel</button>
+            </div>
+          </div>
+
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+        <!----
+        <div class="modal-footer p-4">
+            <a href="#"> <button type="button" class="btn btn-dark">Create defect</button></a>
+            <button type="button" class="btn btn-secondarydelete  ms-3">Cancel</button>
         </div>
+        --->
       </div>
     </div>
   </div>
