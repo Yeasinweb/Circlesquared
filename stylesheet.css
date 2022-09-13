@@ -438,3 +438,15 @@
 .controlsize {
     height: 160px;
 }
+
+.appshover {
+    width:580px;
+    border: #ededee solid 1px;
+    border-radius: 10px;
+}
+
+.appshover:hover {
+    border: 1px solid #0c63e4 ;
+    transition: all 0.9s;
+}
+
