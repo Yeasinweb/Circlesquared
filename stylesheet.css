@@ -440,9 +440,9 @@
 }
 
 .appshover {
-    width:580px;
     border: #ededee solid 1px;
     border-radius: 10px;
+    text-align: start;
 }
 
 .appshover:hover {
