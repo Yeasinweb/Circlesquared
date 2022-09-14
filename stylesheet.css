@@ -449,3 +449,8 @@
     border: 1px solid #0c63e4 ;
     transition: all 0.9s;
 }
+
+.owner {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
