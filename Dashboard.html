@@ -284,31 +284,30 @@
   <!----Analytics Overview end-->
   
   <script>
-   google.charts.load('current', {'packages':['corechart']});
-google.charts.setOnLoadCallback(drawChart);
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
 
-function drawChart() {
-var data = google.visualization.arrayToDataTable([
-  ['Contry', 'Mhl'],
-  ['Italy',55],
-  ['France',49],
-  ['Spain',44],
-  ['USA',24],
-  ['Argentina',15]
-]);
+        function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Contry', 'Mhl'],
+        ['Italy',55],
+        ['France',49],
+        ['Spain',44],
+        ['USA',24],
+        ['Argentina',15]
+        ]);
 
-var options = {
-  title:'our Annual Test Report'
-};
+        var options = {
+        title:'our Annual Test Report'
+        };
 
-var chart = new google.visualization.PieChart(document.getElementById('myChart'));
-  chart.draw(data, options);
+        var chart = new google.visualization.PieChart(document.getElementById('myChart'));
+        chart.draw(data, options);
 
-  var chartbar = new google.visualization.BarChart(document.getElementById('myChartbar'));
-  chartbar.draw(data, options);
+        var chartbar = new google.visualization.BarChart(document.getElementById('myChartbar'));
+        chartbar.draw(data, options);
 
-}
-
+        }
 
     </script>
 
