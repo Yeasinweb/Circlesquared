@@ -454,3 +454,24 @@
     background-color: #f4f4f4;
     padding: 10px;
 }
+
+.bgcolor {
+    background-color: #F2F2F2;
+}
+
+.whysize {
+    font-size: 70px;
+}
+
+.dashboardbutton{
+    background-color: #e6e7e8;
+}
+
+.dashboardbutton:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.table_heading {
+    background-color: #e6e6e6;
+}
