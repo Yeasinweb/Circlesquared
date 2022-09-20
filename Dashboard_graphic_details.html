@@ -122,7 +122,7 @@
 <section class="Analytics Overview">
     <div class="condainer-fluid">
         <div class="row mx-5 mt-3r">
-            <div class="col-md-6 col-lg-5">
+            <div class="col-md-6 col-lg-5 px-5">
                 <div class="#">
                     <h1 class="whysize">Why do we use it?</h1>
                     <p class="# mt-4">Do you have several practical questions and doubts in your Software Testing life? Don’t know how to get them solved? You are now at
@@ -137,13 +137,13 @@
             <div class="col-md-6 col-lg-7">
 
                 <div class="row">
-                    <div class="col-md-6 col-lg-6">
-                        <div class="">
+                    <div class="col-md-6 col-lg-6 ps-5">
+                        <div class="ms-5">
                             <h6>Select project to view summary</h6>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-md-6 col-lg-6 pe-5">
                         <div class="text-end">
                             <div class="dropdown">
                                 <button class="btn fillcolorproject border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">Status</button>
@@ -159,16 +159,16 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-12">
-                        <div class="text-center">
+                    <div class="col-lg-12">
+                        <div class="ms-5">
                             <div id="myChart" style="width:100%; max-width:400px; height:400px;"></div>
                         </div>
                     </div>
                 </div>
 <!------graph-->
                 <div class="row">
-                    <div class="col-12">
-                        <div class="#">
+                    <div class="col-12 ps-5">
+                        <div class="ms-5">
                             <p>Execution : Test suit - 1 Test cse - 4 Defect - 1</p>
                         </div>
                     </div>
@@ -182,7 +182,7 @@
 
 <section class="Analytics Overview">
   <div class="condainer-fluid">
-      <div class="row mx-5 mt-5">
+      <div class="row mx-5 mt-5 px-5">
           <div class="col-12">
              <h6>All Project summary</h6>
           </div>
@@ -193,7 +193,7 @@
 <section class="Analytics Overview">
     <div class="condainer-fluid">
         <div class="row mx-5 align-items-center">
-            <div class="col-12 mt-4">
+            <div class="col-12 mt-4 px-5">
               <div class="#">
                 <table class="table table-bordered text-center">
                   <thead>
@@ -239,22 +239,19 @@
     function drawChart() {
     var data = google.visualization.arrayToDataTable([
     ['Country', 'Mhl'],
-    ['Italy',55],
-    ['France',49],
-    ['Spain',44],
-    ['USA',24],
-    ['Argentina',15]
+    ['',55],
+    ['',49],
+    ['',44],
+    ['',24],
+    ['',15]
     ]);
 
     var options = {
-    title:'our Annual Test Report'
+    title:''
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('myChart'));
     chart.draw(data, options);
-
-    var chartbar = new google.visualization.BarChart(document.getElementById('myChartbar'));
-    chartbar.draw(data, options);
 
     }
 
