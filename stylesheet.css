@@ -4,9 +4,11 @@
  
  .backimage{
  	background-image: url(image/homepage.jpg);
- 	height: 100vh;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
  }
 
 
