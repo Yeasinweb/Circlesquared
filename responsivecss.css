@@ -32,4 +32,16 @@
       }
   }
 
+  @media only screen and (max-width:431px) {
+
+    .logo-sized{
+        width: 120px;
+        height: auto;
+        
+      }
+    .user-size{
+      width: 30px;
+      height: auto;
+    }  
+  }
 
