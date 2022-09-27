@@ -16,51 +16,46 @@
 <body>
 
   <section class="header">
-    <div class="condainer-fluid">
-  
-        <div class="row mx-5 mt-4 align-items-center">
-            <div class="col-md-6 col-lg-4">
-                <div class="left-icon">
-                    <div class="toggle  d-flex">
-                        <div class="form-check">
-                            <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                            </label>
-                          </div>
-                          <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                            <img class="ms-5" src="./image/menu.svg">
-                          </button>
-                          
-                    </div>
+    <section class="header">
+      <div class="container-fluid">
+
+          <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
+        <div class="col-auto col-md-2 col-lg-3">
+                <div class="toggle d-flex">
+                    <div class="form-check">
+                        <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                        </label>
+                      </div>
+                      <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <img class="ms-lg-5 ms-2" src="./image/menu.svg">
+                      </button>
+                      
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4 align-items-center">
-                <div class="logo">
-                    <div class="logo-item">
-                        <a href="Dashboard.html"><img src="./image/CircleSquared-01.svg"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 text-end">
-                <div class="user-icon ">
-                    <div class="user">
-                        <div class="dropdown">
-                            <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="./image/usericon.svg">
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Profile</a></li>
-                              <li><a class="dropdown-item" href="#">User Invites</a></li>
-                              <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
-                            </ul>
-                          </div>
-                    </div>
-                </div>
-            </div>
-  
         </div>
+        <div class="col-auto  col-md-8 col-lg-6">
+            <div class="logo-header text-center">
+                <a class="logo-item" href="Dashboard.html"><img src="./image/CircleSquared-01.svg"></a>
+            </div>
+        </div>
+        <div class="col-auto col-md-2 col-lg-3">
+            <div class="user-icon text-end">
+                    <div class="dropdown">
+                        <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./image/usericon.svg">
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                          <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
+                          <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+    </div>
   
-        <div class="row mx-5 mt-4 justify-content-between align-items-center navheight">
+        <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
           <div class="col-md-auto">
               <h4>Add Test Run</h4>
           </div>
@@ -116,7 +111,7 @@
 <!--------my project start -->
 	
 <section class="Add Test Run">
-    <div class="condainer-fluid">
+    <div class="container-fluid">
         <div class="row mx-5 mt-5">
 
             <div class="col-md-6 col-lg-3">
@@ -124,7 +119,7 @@
                     <div class="accordion-item border-0 bg-light">
                         <button class="accordion-button collapsed bg-Light"  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                                 <img src="./image/plussquare50.svg">
-                                <a class="text-decoration-none text-reset" href="Add_Test_Run_suite.html"> <h5 class="ms-3">Authorization (04)</h5> </a>
+                                <a class="text-decoration-none text-reset" href="Add_Test_Run_suite.html"> <h5 class="ms-lg-3">Authorization (04)</h5> </a>
                         </button>
                       </h2>
                       <div id="flush-collapseOne" class="accordion-collapse collapse bg-Light">
@@ -154,7 +149,7 @@
                       <h2 class="accordion-header" id="flush-headingTwo bg-light">
                         <button class="accordion-button collapsed bg-light" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             <img src="./image/plussquare50.svg">
-                            <h5 class="ms-3">Workspace (03)</h5>
+                            <h5 class="ms-lg-3">Workspace (03)</h5>
                         </button>
                       </h2>
                       <div id="flush-collapseTwo" class="accordion-collapse collapse bg-light" >
@@ -184,7 +179,7 @@
                       <h2 class="accordion-header bg-light" id="flush-headingThree">
                         <button class="accordion-button collapsed bg-light" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                             <img src="./image/plussquare50.svg">
-                            <h5 class="ms-3">Projects (02)</h5>
+                            <h5 class="ms-lg-3">Projects (02)</h5>
                         </button>
                       </h2>
                       <div id="flush-collapseThree" class="accordion-collapse collapse bg-light">
@@ -218,7 +213,7 @@
             <div class="col-md-6 col-lg-9 ">
                 <div class="Authorization">
                     <div class="container">
-                        <div class="row borderdot p-5">
+                        <div class="row borderdot p-lg-5">
                             <div class="cold-md-4 col-lg-5">
                                 <h6>Test</h6>
                             </div>
