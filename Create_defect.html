@@ -12,57 +12,53 @@
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+<link rel="stylesheet" type="text/css" href="responsivecss.css">
+
 <script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
     <section class="header">
-        <div class="container-fluid">
-      
-            <div class="row mx-5 mt-4 align-items-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="left-icon">
-                        <div class="toggle  d-flex">
-                            <div class="form-check">
-                                <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                </label>
-                              </div>
-                              <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <img class="ms-5" src="./image/menu.svg">
-                              </button>
-                              
-                        </div>
+      <div class="container-fluid">
+
+        <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
+      <div class="col-auto col-md-2 col-lg-3">
+              <div class="toggle d-flex">
+                  <div class="form-check">
+                      <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 align-items-center">
-                    <div class="logo">
-                        <div class="logo-item">
-                            <a href="Dashboard.html"><img src="./image/CircleSquared-01.svg"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 text-end">
-                    <div class="user-icon ">
-                        <div class="user">
-                            <div class="dropdown">
-                                <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./image/usericon.svg">
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                                  <li><a class="dropdown-item" href="#">User Invites</a></li>
-                                  <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
-                                </ul>
-                              </div>
-                        </div>
-                    </div>
-                </div>
+                    <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      <img class="ms-lg-5 ms-2" src="./image/menu.svg">
+                    </button>
+                    
+              </div>
+      </div>
+      <div class="col-auto  col-md-8 col-lg-6">
+          <div class="logo-header text-center">
+              <a class="logo-item" href="Dashboard.html"><img class="logo-sized" src="./image/CircleSquared-01.svg"></a>
+          </div>
+      </div>
+      <div class="col-auto col-md-2 col-lg-3">
+          <div class="user-icon text-end">
+                  <div class="dropdown">
+                      <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img class="user-size" src="./image/usericon.svg">
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
+                        <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+                      </ul>
+                  </div>
+          </div>
+      </div>
+  
+  </div>
       
-            </div>
-      
-            <div class="row mx-5 mt-4 justify-content-between align-items-center navheight">
+            <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
               <div class="col-md-auto d-flex">
                 <a href="Defects.html"> <i class="fa-solid fa-left-long mt-2"></i></a> <h4 class="ms-3">Create defect</h4>
               </div>
@@ -117,16 +113,16 @@
 <section class="Edit test run">
     <div class="container-fluid">
 
-        <div class="row mx-5 mt-3">
+        <div class="row mx-lg-5 mt-3">
                     <div class="col-md">
-                        <div class="#">
+                        <div class="Defect">
                             <label for="exampleInputEmail1" class="form-label">Defect title</label>
                             <input type="type" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="For example:Regression">
                         </div>
                     </div>
         </div>
 
-        <div class="row mx-5 mt-4">
+        <div class="row mx-lg-5 mt-4">
             <div class="col-md">
                 <div class="#">
                     <label for="exampleInputEmail1" class="form-label">Actual result</label>
@@ -135,7 +131,7 @@
             </div>
         </div>
 
-        <div class="row mx-5 mt-4">
+        <div class="row mx-lg-5 mt-4">
             <div class="col-md-6 col-lg-12">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Milestone</label>
@@ -148,7 +144,7 @@
             </div>
         </div>
 
-        <div class="row mx-5 mt-4">
+        <div class="row mx-lg-5 mt-4">
                 <div class="col-md-6 col-lg-12">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Behavior<sup>*</sup></label>
@@ -167,7 +163,7 @@
                 </div>
         </div>
 
-        <div class="row mx-5 mt-4">
+        <div class="row mx-lg-5 mt-4">
             <div class="col-md-6 col-lg-12">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Assignee<sup>*</sup></label>
@@ -181,15 +177,15 @@
             </div>
          </div>
 
-        <div class="row mx-5 mt-4 border-bottom py-2">
+        <div class="row mx-lg-5 mt-4 border-bottom py-2">
             <div class="col-md">
-                <div class="#">
+                <div class="Tags">
                     <h6>Tags</h6>
                  </div>
             </div>
         </div>
 
-        <div class="row mx-5 mt-4">
+        <div class="row mx-lg-5 mt-4">
             <div class="col-md">
                 <div class="Buynoir">
                     <input type="type" class="form-control border-0 formcolor_run" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Buynoir">
@@ -197,15 +193,15 @@
             </div>
         </div>
 
-        <div class="row mx-5 mt-4 border-bottom py-2">
+        <div class="row mx-lg-5 mt-4 border-bottom py-2">
             <div class="col-md">
-                <div class="#">
+                <div class="Attachments">
                     <h6>Attachments</h6>
                  </div>
             </div>
         </div>
 
-        <div class="row mx-5 mt-4">
+        <div class="row mx-lg-5 mt-4">
             <div class="col-md">
                 <div class="d-flex align-items-center m-0 p-0">
                     <button type="button" class="btn d-flex align-items-center m-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -216,7 +212,7 @@
             </div>
         </div>
 
-        <div class="row mx-5 mt-4 border-bottom">
+        <div class="row mx-lg-5 mt-4 border-bottom">
             <div class="col-md">
                 
             </div>
@@ -226,7 +222,7 @@
 
 
 
-        <div class="row mx-5 mt-5 mb-5">
+        <div class="row mx-lg-5 mt-5 mb-5">
             <div class="col-md-6 col-lg-3">
            <a href="Defects.html"> <button type="button" class="btn btn-dark">Create defect</button></a>
             <button type="button" class="btn btn-secondarydelete  ms-3">Cancel</button>
