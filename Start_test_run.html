@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Circlesquared</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<link rel="stylesheet" type="text/css" href="responsivecss.css">
+
+</head>
+<body>
+
+    <section class="header">
+
+        <div class="container-fluid">
+
+            <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
+                <div class="col-auto col-md-2 col-lg-3">
+                        <div class="toggle d-flex">
+                            <div class="form-check">
+                                <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                </label>
+                                </div>
+                                <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <img class="ms-lg-5 ms-2" src="./image/menu.svg">
+                                </button>
+                                
+                        </div>
+                </div>
+                <div class="col-auto  col-md-8 col-lg-6">
+                    <div class="logo-header text-center">
+                        <a class="logo-item" href="Dashboard.html"><img class="logo-sized" src="./image/CircleSquared-01.svg"></a>
+                    </div>
+                </div>
+                <div class="col-auto col-md-2 col-lg-3">
+                    <div class="user-icon text-end">
+                            <div class="dropdown">
+                                <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="user-size" src="./image/usericon.svg">
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                    <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
+                                    <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+      
+            </div>
+      
+            <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
+              <div class="col-md-auto d-flex">
+                <img src="./image/left_arrow.svg"><h4 class="ms-3"> Start test run</h4>
+              </div>
+        
+              <div class="col-md-auto m-0 p-0">
+               
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <nav class="navbar navbar-expand bg-primary">
+                      <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav gap-4">
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-white  fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Project
+                              </a>
+                              <ul class="dropdown-menu mt-2">
+                                <li><a class="dropdown-item" href="My_Projects.html">My Project</a></li>
+                                <li><a class="dropdown-item" href="Add_Project.html">Add Project</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white fw-semibold" href="#">Workspace</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white fw-semibold" href="#">Dashboards</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white fw-semibold" href="#">Queries</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white fw-semibold" href="#">Apps</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+      
+              </div>
+          </div>
+            
+
+<!--------Title + Status  start -->
+
+        <div class="row mx-5 mt-3">
+            <div class="col">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Run title</label>
+                    <input type="text" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Test run 2022/09/29">
+                  </div>
+            </div>
+
+          </div>
+        <!--------Title + Status  end -->
+
+        <!--------Description  start -->
+
+        <div class="row mx-5 mt-1">
+            <div class="col-md-6 col-lg-12">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Description</label>
+                    <input type="type" class="form-control form-control-sm " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="For example we can authorize on page ">
+                  </div>
+            </div>
+
+          </div>
+        <!--------Description  end -->
+
+
+         <!--------Suite  start -->
+
+         <div class="row mx-5 mt-1">
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Plan</label>
+                    <div class="input-group">
+                        <select class="form-select form-select-sm border-0 formcolor_test_run" id="inputGroupSelect04" aria-label="select">
+                          <option selected>select</option>
+                          <option value="1">One</option>
+                        </select>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label formcolor_run">Environment<sup>*</sup></label>
+                    <div class="input-group">
+                        <select class="form-select form-select-sm border-0 formcolor_test_run" id="inputGroupSelect04" aria-label="No set">
+                          <option selected>No set</option>
+                          <option value="1">One</option>
+                        </select>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Milestone<sup>*</sup></label>
+                    <div class="input-group">
+                        <select class="form-select form-select-sm border-0 formcolor_test_run" id="inputGroupSelect04" aria-label="No set">
+                          <option selected>No set</option>
+                          <option value="1">One</option>
+                        </select>
+                  </div>
+                </div>
+            </div>
+
+            <!------2 start-->
+            <div class="col-md-6 col-lg-4">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Default assignee </label>
+                    <div class="input-group">
+                        <select class="form-select form-select-sm border-0 formcolor_test_run" id="inputGroupSelect04" aria-label="select">
+                          <option selected>Unassigned</option>
+                          <option value="1">Shahin Sarkar</option>
+                        </select>
+                  </div>
+                </div>
+            </div>
+
+            <!-------suite 2 end-->
+          </div>
+        <!--------Suite  end -->
+
+
+<!--------Tags start -->
+
+        <div class="row mx-lg-5 mt-1 border-bottom pb-2">
+            <div class="col-md-6 col-lg-12 mt-3">
+                <div class="title">
+                <h6>Tags</h6>
+                </div>
+            </div>
+        </div>
+
+<!--------Tags  end -->
+
+<!--------Tags start -->
+
+            <div class="row mx-lg-5 mt-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="select mb-3">
+                        <div class="input-group">
+                            <select class="form-select form-select-sm border-0 formcolor_test_run" id="inputGroupSelect04" aria-label="select">
+                              <option selected>select</option>
+                              <option value="1">Khan</option>
+                              <option value="2">Rakib</option>
+                              <option value="3">Omar</option>
+                            </select>
+                      </div>
+                    </div>
+                </div>
+
+                </div>
+<!--------Tags  end -->
+
+            <!--------Test cases -->
+
+            <div class="row mx-lg-5 mt-1 border-bottom pb-2">
+                <div class="col-md-6 col-lg-12 mt-3">
+                    <div class="Test">
+                    <h6>Test cases</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-------Add cases -->
+            <div class="row mx-lg-5 mt-1 border-bottom pb-4">
+                <div class="col-md-6 col-lg-12 mt-3">
+                    <div class="Add">
+                        <p>0 test cases selected</p>
+                        <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="./image/plus_add_cases.svg"> <b>Add cases</b>
+                        </button>
+                      
+                    </div>
+                </div>
+            </div>
+             <!--------Save start -->
+
+             <div class="row mx-5 mt-3 pb-5">
+                <div class="col-md-6 col-lg-12 d-flex">
+                   <a href="#"> <button type="button" class="btn btn-primary me-3">Save</button></a>
+                    <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                </div>
+            </div>
+            <!--------Save  end -->
+
+        </div> 
+
+    </section>
+			
+        <!-- Button trigger modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                ...
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
