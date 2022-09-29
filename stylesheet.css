@@ -502,3 +502,7 @@
 .mar-left{
     margin-left: -15px;
 }
+
+.modal_scroll{
+    overflow-y: scroll;
+}
