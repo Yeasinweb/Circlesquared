@@ -236,7 +236,9 @@
                     <div class="Add">
                         <p>0 test cases selected</p>
                         <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <img src="./image/plus_add_cases.svg"> <b>Add cases</b>
+                            <div class="add cases d-flex align-items-center">
+                                <img src="./image/plus_add_cases.svg"> <h6 class="text-primary ms-2 mt-1">Add cases</h6>
+                            </div>
                         </button>
                       
                     </div>
@@ -260,15 +262,135 @@
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Select test cases</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                
                 </div>
                 <div class="modal-body">
-                ...
+                    <!----search-->
+                    <div class="row">
+                        <div class=" col-md-6 col-lg-4 mt-1">
+                            <input class="form-control" type="text" placeholder="Search for test case" aria-label=".form-control-lg example">
+                        </div>
+
+                        <div class=" col-md-6 col-lg-8 mt-1 d-flex">
+        
+                            <div class="dropdown">
+                              <button class="btn btn-white border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <h6 class="text-primary"> + Add filter</h6>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Author</a></li>
+                                <li><a class="dropdown-item" href="#">Assignee</a></li>
+                                <li><a class="dropdown-item" href="#">Severity</a></li>
+                                <li><a class="dropdown-item" href="#">Milestone</a></li>
+                                <li><a class="dropdown-item" href="#">Creation Date</a></li>
+                                <li><a class="dropdown-item" href="#">Last Update Date</a></li>
+                                <li><a class="dropdown-item" href="#">Tags</a></li>
+                              </ul>
+                            </div>
+                              
+                          </div>
+
+                    </div>
+                    <!----search end-->
+                    <div class="row border-bottom pb-3"></div>
+                    <!------------border end------------>
+                    <div class="row">
+                        <!----left side-->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="check d-flex mt-4">
+                                        <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        <h6 class="ms-3">New Project</h6>
+                                    </div>
+                                     
+                                </div>
+                                <div class="col">
+                                    <Div class="edit mt-4">
+                                        <div class="droplist text-end">
+                                            <div class="dropdown">
+                                                <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <img src="./image/menu_list.svg">
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Assign all to</a></li>
+                                                    <li><a class="dropdown-item" href="#">Unassign</a></li>
+                                                </ul>
+                                              </div>
+                                        </div>
+                                    </Div>
+                                </div>
+                            </div>
+                            <!---------->
+                            <div class="row">
+                                <div class="col">
+                                    <div class="check d-flex mt-4">
+                                        <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        <h6 class="ms-3">New Project</h6>
+                                    </div>
+                                     
+                                </div>
+                                <div class="col">
+                                    <Div class="edit mt-4">
+                                        <div class="droplist text-end">
+                                            <div class="dropdown">
+                                                <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <img src="./image/menu_list.svg">
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Assign all to</a></li>
+                                                    <li><a class="dropdown-item" href="#">Unassign</a></li>
+                                                </ul>
+                                              </div>
+                                        </div>
+                                    </Div>
+                                </div>
+                            </div>
+                            
+                            <!--------->
+
+                        </div>
+                         <!----left side end-->
+                        <div class="col-md-6 col-lg-8">
+                            <div class="row mt-4">
+                                <div class="col-md-6 col-lg-8">
+                                    <div class="new">
+                                        <h5>New Project 1</h5>
+                                        <div class="row mt-3">
+                                            <div class="col-md-6 col-lg-3 mt-4">
+                                                <div class="check d-flex">
+                                                    <input class="form-check-input" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                                    <img class="ms-4" src="./image/plus_New_Project-01.svg">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-9 mt-2  p-0 m-0">
+                                                <div class="new project mar-left">
+                                                    <p>New project for gmail <br>
+                                                    <small class="text-muted">NP-1 &nbsp;&nbsp;&nbsp;&nbsp; Not set &nbsp;&nbsp;&nbsp;&nbsp;  Not set&nbsp;&nbsp;&nbsp;&nbsp; Other &nbsp;&nbsp;&nbsp;&nbsp; Not set</small>  </p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn fillcolorproject ms-2  xs-mt-5">Select all</button>
+                                    <button type="button" class="btn fillcolorproject ms-2  xs-mt-5">Unselect all</button>
+                                    <button type="button" class="btn fillcolorproject ms-2  xs-mt-5">Assign selected</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!----right side end-->
+                    </div>
+
                 </div>
+
+
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Save changes</button>
