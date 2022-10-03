@@ -514,3 +514,11 @@
 .failed_color{
     background-color: #f66384;
 }
+.open_color{
+    background-color: #4F82EC;
+    color: white;
+    padding: 3px;
+    width:60px;
+    border-radius: 5px;
+    text-align: center;
+}
