@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Circlesquared</title>
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<link rel="stylesheet" type="text/css" href="responsivecss.css">
+
+<script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <section class="header">
+      <div class="container-fluid">
+
+        <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
+      <div class="col-auto col-md-2 col-lg-3">
+              <div class="toggle d-flex">
+                  <div class="form-check">
+                      <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
+                    </div>
+                    <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      <img class="ms-lg-5 ms-2" src="./image/menu.svg">
+                    </button>
+                    
+              </div>
+      </div>
+      <div class="col-auto  col-md-8 col-lg-6">
+          <div class="logo-header text-center">
+              <a class="logo-item" href="Dashboard.html"><img class="logo-sized" src="./image/CircleSquared-01.svg"></a>
+          </div>
+      </div>
+      <div class="col-auto col-md-2 col-lg-3">
+          <div class="user-icon text-end">
+                  <div class="dropdown">
+                      <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img class="user-size" src="./image/usericon.svg">
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
+                        <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+                      </ul>
+                  </div>
+          </div>
+      </div>
+  
+  </div>
+
+            <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
+              <div class="col-md-auto d-flex">
+                <a href="Defects.html"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                  </svg></a>
+                <h4>Invite new user </h4>
+              </div>
+        
+              <div class="col-md-auto m-0 p-0">
+               
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <nav class="navbar navbar-expand bg-primary">
+                      <div class="container">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav gap-4">
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle text-white  fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Project
+                              </a>
+                              <ul class="dropdown-menu mt-2">
+                                <li><a class="dropdown-item" href="My_Projects.html">My Project</a></li>
+                                <li><a class="dropdown-item" href="Add_Project.html">Add Project</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white fw-semibold" href="#">Workspace</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white fw-semibold" href="#">Dashboards</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white fw-semibold" href="#">Queries</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-white fw-semibold" href="#">Apps</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div> 
+    </section>
+  <!----my project end-->
+
+<!--------
+  <section class="details">
+    <div class="container-fluid">
+        <div class="row mx-lg-5 mt-3 align-items-center">
+            <div class="col-md-6 col-lg-12 ">
+                <button type="button" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                    </svg>
+                In progress </button>
+                <button type="button" class="btn btn-primary ms-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                      </svg>
+                    Resolve</button>
+                <button type="button" class="btn btn-danger ms-2  xs-mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    Invalid</button>
+                <button type="button" class="btn fillcolorproject ms-2  xs-mt-5">Assign to me</button>
+                <button type="button" class="btn fillcolorproject ms-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+                    </svg>
+                Edit</button>
+            </div>
+        </div>
+    </div>
+  </section>
+------->
+
+  <section class="Defect">
+    <div class="container-fluid">
+        <div class="row mx-lg-5 mt-3 pb-3">
+            <div class="col-md-6 col-lg-9">
+                <h5>Test run results</h5>
+
+                <div class="border p-3 mt-4">
+                    <div class="row">
+                        <div class="col">
+                            <small><p>Test case</p></small>
+                            <div class="accordion p-0" id="accordionExample border-0">
+                                <div class="accordion-item border-0 p-0">
+                                  <h2 class="accordion-header p-0" id="headingOne">
+                                    <button class="accordion-button Authorization p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      <h6>Authorization</h6> <img class="ms-2 mb-2" src="./image/bottom_arrow.svg">
+                                    </button>
+                                  </h2>
+                                  
+                                </div>
+                                
+                              </div>
+                        </div>
+
+                        <div class="col">
+                            <small><p>Author</p></small>
+                            <H6>Yeasin Khan</H6>
+                        </div>
+                        <div class="col">
+                            <small><p>Found in run</p></small>
+                            <H6>R-10 - Test run 2022/06/17</H6>
+                        </div>
+                    </div>
+                    <!------->
+                    <Div class="row">
+                        <div class="col">
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+        
+                                  <div class="row">
+                                    <div class="col-md-6 col-lg-6">
+                                        <h6>Steps to reproduce</h6>
+                                    </div>
+                                  </div>
+                                  <!-----heading-->
+                                  <div class="row mt-3">
+                                    <div class="col">
+                                       <small><p class="text-muted">Step	Action</p></small>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <small><p class="text-muted">Input data &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;	Expected result</p></small>
+                                    </div>
+                                    <div class="col-md-6 col-lg-3">
+                                        <small><p class="text-muted">Comment &nbsp; &nbsp; &nbsp; Attachments &nbsp; &nbsp; &nbsp;Status</p></small>
+                                    </div>
+                                  </div>
+                                  <!---------->
+                                  <div class="row border-bottom Authorization_test_run">
+                                    <div class="col">
+                                        <p class="mt-3">1	&nbsp; &nbsp; &nbsp;  Open projects page: https://qase.io/app</p>
+                                    </div>
+                                  </div>
+                                  <!--------->
+                                  <!---------->
+                                  <div class="row border-bottom Authorization_test_run">
+                                    <div class="col">
+                                        <p class="mt-3">1	&nbsp; &nbsp; &nbsp;  Open projects page: https://qase.io/app</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="mt-3">You are being redirected to the new project form</p>
+                                    </div>
+                                  </div>
+                                  <!--------->
+                                  <div class="row border-bottom Authorization_test_run">
+                                    <div class="col">
+                                        <p class="mt-3">1	&nbsp; &nbsp; &nbsp;  Open projects page: https://qase.io/app</p>
+                                        <ul class="ms-4">
+                                            <li>
+                                                Project name: Regression Project name: Regression
+                                            </li>
+                                            <li>
+                                                Description: Project description
+                                            </li>
+                                            <li>
+                                                Project type: Web
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <p class="mt-3">You are being redirected to the new project form</p>
+                                    </div>
+                                  </div>
+                                  <!--------->
+                                  <div class="row border-bottom Authorization_test_run">
+                                    <div class="col">
+                                        <p class="mt-3">1	&nbsp; &nbsp; &nbsp;  Open projects page: https://qase.io/app</p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="mt-3">You are being redirected to the new project form</p>
+                                    </div>
+                                  </div>
+                                  <!--------->
+        
+                                </div>
+                              </div>
+                        </div>
+                    </Div>
+                    <!--------->
+                </div>
+
+                <div class="mt-4">
+                    <h6 class="pb-3">Attachments</h6>
+                    <img src="./image/image0.jpg">
+                </div>
+
+                <div class="mt-4">
+                    <h6>Comments</h6>
+                </div>
+<!------------
+                <div class="row mt-4">
+                    <div class="col-md-6 col-lg-1">
+                        <img src="./image/image_40.jpg">
+                    </div>
+                    <div class="col-md-6 col-lg-11 leftsi">
+                        <h6>Shahin Rahman <small class="text-muted">Software Engineer</small></h6>
+                        <p>New user into workspace</p>
+                        <p>2 months ago</p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-6 col-lg-1">
+                        <img src="./image/image_40.jpg">
+                    </div>
+                    <div class="col-md-6 col-lg-11 leftsi">
+                        <h6>Shahin Rahman <small class="text-muted">Software Engineer</small></h6>
+                        <p>New user into workspace</p>
+                        <p>2 months ago</p>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-6 col-lg-1">
+                        <img src="./image/image_40.jpg">
+                    </div>
+                    <div class="col-md-6 col-lg-11 leftsi">
+                        <h6>Shahin Rahman <small class="text-muted">Software Engineer</small></h6>
+                        <p>New user into workspace</p>
+                        <img src="./image/image90.jpg">
+                        <p class="mt-2">2 months ago</p>
+                    </div>
+                </div>
+-------------------------->
+                <div class="row mt-4 mb-5">
+                    <div class="col-md-6 col-lg-12">
+                        <div class="col-md-6 col-lg-12 d-flex align-items-center">
+                            <img src="./image/Test Case details Authorization.png">
+                            <input type="text" class="form-control ms-4" id="exampleFormControlInput1" placeholder="type here">
+
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-images ms-4" viewBox="0 0 16 16">
+                                    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                                    <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                                  </svg>
+                              </button>
+                            
+                            <button type="button" class="btn btn-primary ms-4">Submit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+            </div>   
+            <!------right side-->
+            <div class="col-md-6 col-lg-3">
+              <div class="row">
+                <h6>Status</h6>
+                <p class="text-muted"> In Progress</p>
+              </div>
+              <div class="row mt-4">
+                <h6>Severity</h6>
+                <p class="text-muted">Critical</p>
+              </div>
+              <div class="row mt-4">
+                <h6>Milestone</h6>
+                <p class="text-muted">Release 1.0</p>
+              </div>
+              <div class="row mt-4">
+                <h6>Assignee</h6>
+                <div class="image d-flex mt-2 align-items-center">
+                  <img src="./image/image_40.jpg">
+                  <p class="ms-2 mt-3">Salam Khan</p>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <h6>Created</h6>
+                <p class="text-muted">17 June 2022 at 15:13:45</p>
+              </div>
+              <div class="row mt-4">
+                <h6>Tags</h6>
+                <div class="d-flex">
+                  <p class="shahin-bg">all test</p>
+                  <p class="shahin-bg ms-3">test</p>
+                </div>
+                
+              </div>
+                
+            </div>
+             <!------right side end-->
+    </div>
+  </section>
+  
+<!------->
+
+
+<!-- Modal start -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Upload attachment</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <!---------->
+            <div class=" row">
+                <div class="col-md-3"><h6 class="underlineupload">Upload now</h6></div>
+                <div class="col-md-6"><h6>Browse</h6></div>
+            </div>
+            <div class=" row">
+                <div class="mt-3 body_edit_run justify-content-center text-center d-flex align-items-center">Upload now</div>
+            </div>
+            <!---------->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         <a href="Test_run_view_case.html"> <button type="button" class="btn btn-primary">Save</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal end-->
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
