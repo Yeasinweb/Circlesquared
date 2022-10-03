@@ -507,12 +507,10 @@
     overflow-y: scroll;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: none;
+.passed_color{
+    background-color: #94c64a;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color:none;
+.failed_color{
+    background-color: #f66384;
 }
