@@ -527,3 +527,10 @@
     width: 20px;
     height: 20px;
 }
+
+.modal_right{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
