@@ -192,7 +192,9 @@
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="result">
-                                <p>Authorization</p>
+                                <button type="button" class="btn m-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <p>Authorization</p>
+                                </button>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
@@ -465,7 +467,318 @@
                     var data = [{labels:xArray, values:yArray, hole:.4, type:"pie"}];
                     
                     Plotly.newPlot("myPlot", data, layout);
-                    </script>
+                </script>
+
+                    <!------modal-->
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <!----------
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            ----->
+                            
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                             
+                                <div class="container">
+                                    <div class="row">
+                                       <div class="col-md-12 col-lg-9">
+                                            <div class="heading">
+                                                <p class="p-0 m-0"><small>DEMO-1</small></p>
+                                                <h5>Authorization</h5>
+                                                <!------edit button add-->
+                                                <a href="Edit_test_case.html"> <button type="button" class="btn fillcolorproject mt-2 mb-3">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                                  </svg>&nbsp;&nbsp;Edit
+                                                </button></a> 
+                                                <button type="button" class="btn fillcolorproject mt-2 mb-3 ms-3">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+                                                    <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
+                                                  </svg>&nbsp;&nbsp;Delete
+                                                </button>
+                                                <!------- edit button add end-->
+                    
+                              <div class="row">
+                                  <div class="col-lg-6 col-lg-12">
+                                      <!---border-bottom py-2-->
+                                      <div class="#">
+                                      
+                                          <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="General-tab" data-bs-toggle="tab" data-bs-target="#General-tab-pane" type="button" role="tab" aria-controls="General-tab-pane" aria-selected="true">General</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="Runhistory-tab" data-bs-toggle="tab" data-bs-target="#Runhistory-tab-pane" type="button" role="tab" aria-controls="Runhistory-tab-pane" aria-selected="false">Run history</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="Changehistory-tab" data-bs-toggle="tab" data-bs-target="#Changehistory-tab-pane" type="button" role="tab" aria-controls="Changehistory-tab-pane" aria-selected="false">Change history</button>
+                                              </li>
+                                              <li class="nav-item" role="presentation">
+                                                  <button class="nav-link" id="Defects-tab" data-bs-toggle="tab" data-bs-target="#Defects-tab-pane" type="button" role="tab" aria-controls="Defects-tab-pane" aria-selected="false">Defects</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                  <button class="nav-link" id="Comments-tab" data-bs-toggle="tab" data-bs-target="#Comments-tab-pane" type="button" role="tab" aria-controls="Comments-tab-pane" aria-selected="false">Comments</button>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content" id="myTabContent">
+                                              <div class="tab-pane fade show active" id="General-tab-pane" role="tabpanel" aria-labelledby="General-tab" tabindex="0">
+                                                  <div class="row">
+                                                      <div class="col-md-6 col-lg-12">
+                                                          <div class="Description mt-5">
+                                                          <h6>Description</h6>
+                                                          <p>Registered users can log in to the application using email and password.</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                      
+                                                  <div class="row">
+                                                      <div class="col-md-6 col-lg-12">
+                                                          <div class="Steps mt-4">
+                                                          <p>Steps</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                      
+                                                      <div class="row border-bottom py-2">
+                                                      <div class="col-md-6 col-lg-4">
+                                                          <p class="text-muted"> Step	&nbsp;&nbsp;&nbsp;Action</p>
+                                                      </div>
+                      
+                                                      <div class="col-md-6 col-lg-4">
+                                                          <p class="text-muted">Input data</p>
+                                                      </div>
+                      
+                                                      <div class="col-md-6 col-lg-4">
+                                                          <p class="text-muted">Steps</p>
+                                                      </div>
+                                                    </div>
+                      
+                                                    <!------1-->
+                      
+                                                    <div class="row border-bottom mt-2">
+                                                      <div class="col-md-6 col-lg-4">
+                                                          <p class="text-muted py-2"><small>1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://qase.io/login</small></p>
+                                                      </div>
+                      
+                                                      <div class="col-md-6 col-lg-4">
+                                                      </div>
+                      
+                                                      <div class="col-md-6 col-lg-4">
+                                                          <p class="text-muted">	Sign up page is shown</p>
+                                                      </div>
+                                                    </div>
+                      
+                                                    <!------2-->
+                      
+                                                    <div class="row border-bottom mt-2">
+                                                      <div class="col-md-6 col-lg-4">
+                                                          <p class="text-muted py-2"><small>2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://qase.io/login</small></p>
+                                                      </div>
+                      
+                                                      <div class="col-md-6 col-lg-4">
+                                                      </div>
+                      
+                                                      <div class="col-md-6 col-lg-4">
+                                                      </div>
+                                                    </div>
+                      
+                                                      <!------3-->
+                      
+                                                      <div class="row border-bottom mt-2">
+                                                      <div class="col-md-6 col-lg-4">
+                                                          <p class="text-muted py-2"><small>3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://qase.io/login</small></p>
+                                                      </div>
+                      
+                                                      <div class="col-md-6 col-lg-4">
+                                                      </div>
+                      
+                                                      <div class="col-md-6 col-lg-4">
+                                                      </div>
+                                                    </div>
+                      
+                                                    <!------4-->
+                      
+                                                    <div class="row border-bottom mt-2">
+                                                      <div class="col-md-6 col-lg-4">
+                                                          <p class="text-muted py-2"><small>4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; https://qase.io/login</small></p>
+                                                      </div>
+                      
+                                                      <div class="col-md-6 col-lg-4">
+                                                      </div>
+                      
+                                                      <div class="col-md-6 col-lg-4">
+                                                          <p class="text-muted">user is redirected to https://qase.io/app page.</p>
+                                                      </div>
+                                                    </div>
+                                              </div>
+                                              <div class="tab-pane fade" id="Runhistory-tab-pane" role="tabpanel" aria-labelledby="Runhistory-tab" tabindex="0">
+                                                  R-10	Test run 2022/06/17
+                                              </div>
+                                              <div class="tab-pane fade" id="Changehistory-tab-pane" role="tabpanel" aria-labelledby="Changehistory-tab" tabindex="0">
+                                                  <!------- edit-->
+                    
+                                                  <div class="row mt-4">
+                                                      <div class="col-md-6 col-lg-1">
+                                                          <img src="./image/Test Case details Authorization.png">
+                                                      </div>
+                                                      <div class="col-md-6 col-lg-11">
+                                                          <p>Yeasin Khanhas <small> updated 1 field:</small> Priority <br>
+                                                              <small>2022-06-14 12:33:58</small></p>
+                                                      </div>
+                                                          
+                                                  </div> 
+                    
+                                                  <!------edit done-->
+                                              </div>
+                                              <div class="tab-pane fade" id="Defects-tab-pane" role="tabpanel" aria-labelledby="Defects-tab" tabindex="0">
+                                                  No defects yet.
+                                              </div>
+                                              <div class="tab-pane fade" id="Comments-tab-pane" role="tabpanel" aria-labelledby="Comments-tab" tabindex="0">
+                                                  <!------- edit-->
+                    
+                                                  <div class="row mt-4">
+                                                      <div class="col-md-6 col-lg-1">
+                                                          <img src="./image/Test Case details Authorization.png">
+                                                      </div>
+                                                      <div class="col-md-6 col-lg-7">
+                                                          <div class="mb-3">
+                                                              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="type here">
+                                                              </div>
+                                                      </div>
+                    
+                                                      <div class="col-md-6 col-lg-2">
+                                                          <input type="file" class="form-control" id="inputGroupFile01">
+                                                      </div>
+                    
+                                                      <div class="col-md-6 col-lg-2 ">
+                                                          <button type="button" class="btn btn-primary">Submit</button>
+                                                      </div>
+                                                          
+                                                  </div> 
+                    
+                                                  <!------edit done-->
+                                              </div>
+                                              
+                                            </div>
+                    
+                                      </div>
+                                  </div>
+                              </div>
+                    
+                                                
+                    
+                                                
+                            </div>
+                        </div>
+                    <!-------left side end ------->
+                    
+                                       <div class="col-md-12 col-lg-3 border-start">
+                                         <div class="heading">
+                                                <div class="right_side">
+                                                    <div class="container">
+                    
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-lg-3">
+                                                                <div class="image">
+                                                                    <img src="./image/Test Case details Authorization.png">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-9">
+                                                                    <p class="py-0 m-0"><small>16 Aug 2022</small> </p>
+                                                                    <h6 class=" mb-2">Shahin</h6>
+                                                            </div>
+                                                        </div>
+                    
+                                                        <div class="row mt-4">
+                                                            <div class="col-md-6 col-lg-12">
+                                                                <h6>SEVERITY</h6>
+                                                                <p class="text-muted"> Blocker</p>
+                                                            </div>
+                                                        </div>
+                    
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-6 col-lg-12">
+                                                                <h6>STATUS</h6>
+                                                                <p class="text-muted"> Actual </p>
+                                                            </div>
+                                                        </div>
+                    
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-6 col-lg-12">
+                                                                <h6>PRIORITY</h6>
+                                                                <p class="text-muted">Low</p>
+                                                            </div>
+                                                        </div>
+                    
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-6 col-lg-12">
+                                                                <h6>BEHAVIOR</h6>
+                                                                <p class="text-muted">Not sety</p>
+                                                            </div>
+                                                        </div>
+                    
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-6 col-lg-12">
+                                                                <h6>TYPE</h6>
+                                                                <p class="text-muted">Other</p>
+                                                            </div>
+                                                        </div>
+                    
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-6 col-lg-12">
+                                                                <h6>IS FLAKY</h6>
+                                                                <p class="text-muted">No</p>
+                                                            </div>
+                                                        </div>
+                    
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-6 col-lg-12">
+                                                                <h6>MILESTONE</h6>
+                                                                <p class="text-muted"> Not set</p>
+                                                            </div>
+                                                        </div>
+                    
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-6 col-lg-12">
+                                                                <h6>LAYER</h6>
+                                                                <p class="text-muted">Not set</p>
+                                                            </div>
+                                                        </div>
+                    
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-6 col-lg-12">
+                                                                <h6>AUTOMATION STATUS</h6>
+                                                                <p class="text-muted">Not automated </p>
+                                                            </div>
+                                                        </div>
+                    
+                    
+                                                    </div>  
+                                                </div>
+                                         </div>
+                                    </div>
+                    
+                                    </div>
+                                </div>
+                    
+                    
+                            </div>
+                            <!-----
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                            ---->
+                          </div>
+                        </div>
+                      </div>
+
+
+                    <!----------------modal end-->
 
 
         </div> 
