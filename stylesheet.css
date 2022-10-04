@@ -509,11 +509,24 @@
 
 .passed_color{
     background-color: #94c64a;
+    color: white;
 }
 
 .failed_color{
     background-color: #f66384;
+    color: white;
 }
+
+.blocked_color{
+    background-color: #ddb50a;
+    color: white;
+}
+
+.invalid_color{
+    background-color: #5f01b9;
+    color: white;
+}
+
 .open_color{
     background-color: #4F82EC;
     color: white;
