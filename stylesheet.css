@@ -507,6 +507,22 @@
     overflow-y: scroll;
 }
 
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    height:calc(100vh - 56px);
+    overflow-y: auto;
+    
+}
+
 .passed_color{
     background-color: #94c64a;
     color: white;
@@ -568,6 +584,12 @@
 .btn-outline-primary-passed {
     color: #000000;
     border-color: #94c64a;
+}
+
+.btn-outline-primary-passed:hover:first-child{
+    display: none;
+    color: #ffffff;
+    background-color: #94c64a;
 }
 
 .btn-outline-primary-failed {
