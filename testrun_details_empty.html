@@ -10,6 +10,8 @@
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+<link rel="stylesheet" type="text/css" href="responsivecss.css">
+
 <script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
 
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -20,49 +22,43 @@
     <section class="header">
         <div class="container-fluid">
 
-            <div class="row mx-lg-5 mt-4 align-items-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="left-icon">
-                        <div class="toggle  d-flex">
+            <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
+                <div class="col-auto col-md-2 col-lg-3">
+                        <div class="toggle d-flex">
                             <div class="form-check">
                                 <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                 </label>
                               </div>
                               <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <img class="ms-5" src="./image/menu.svg">
+                                <img class="ms-lg-5 ms-2" src="./image/menu.svg">
                               </button>
                               
                         </div>
+                </div>
+                <div class="col-auto  col-md-8 col-lg-6">
+                    <div class="logo-header text-center">
+                        <a class="logo-item" href="Dashboard.html"><img class="logo-sized" src="./image/CircleSquared-01.svg"></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 align-items-center">
-                    <div class="logo">
-                        <div class="logo-item">
-                            <a href="Dashboard.html"><img src="./image/CircleSquared-01.svg"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 text-end">
-                    <div class="user-icon ">
-                        <div class="user">
+                <div class="col-auto col-md-2 col-lg-3">
+                    <div class="user-icon text-end">
                             <div class="dropdown">
                                 <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./image/usericon.svg">
+                                    <img class="user-size" src="./image/usericon.svg">
                                 </button>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                                  <li><a class="dropdown-item" href="#">User Invites</a></li>
+                                  <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                  <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
                                   <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
                                 </ul>
-                              </div>
-                        </div>
+                            </div>
                     </div>
                 </div>
-      
+          
             </div>
       
-            <div class="row mx-5 mt-4 justify-content-between align-items-center navheight">
+            <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
               <div class="col-md-auto d-flex">
                 <a href="testrun.html"> <i class="fa-solid fa-left-long mt-2"></i></a> <h4 class="ms-3">Test Run 03/10/22</h4>
               </div>
@@ -110,7 +106,7 @@
           </div>
                 <!--------Test Run end -->
 
-                <div class="row mt-4 mx-5">
+                <div class="row mt-4 mx-lg-5">
                     <div class="col-md-6 col-lg-9">
                         <div class="row">
                             <div class="col-md-6 col-lg-3">
@@ -120,8 +116,8 @@
                             </div>
                             <div class="col-md-6 col-lg-9">
                                 <div class="test case  justify-content-center d-flex">
-                                    <div class="open"><button type="button" class="btn btn-primary"><img src="./image/play.svg"> Open wizard</button></div>
-                                    <div class="copmlete ms-3"><button type="button" class="btn btn-primary"><img src="./image/check_mark.svg"> Complte</button></div>
+                                    <div class="open"><button type="button" class="btn btn-primary"><i class="fa-solid fa-circle-play"></i> Open wizard</button></div>
+                                    <div class="copmlete ms-3"><button type="button" class="btn btn-primary"><i class="fa-sharp fa-solid fa-check"></i> Complete</button></div>
                                     <div class="drop ms-3">
                                         <div class="dropdown">
                                             <button class="btn btn-secondarydelete dropdown-toggle py-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -145,8 +141,7 @@
                             <div class="col-md-6 col-lg-2">
                                 <div class="position-relative">
                                    <a href="testrun_details_drop_empty.html"><div class="position-absolute"></div>
-                                   <div class="position-absolute"><h6 class="mt-1">Authorization</h6></div>
-                                   <div class="position-absolute top-50 start-50"><img src="./image/bottom_arrow.svg"></div> </a>
+                                   <div class="position-absolute"><h6 class="mt-1">Authorization <i class="fa-solid fa-angle-down"></i></h6></div> </a>
                                 </div>
                                 </div>
                                 <div class="col-md-6 col-lg-2">
