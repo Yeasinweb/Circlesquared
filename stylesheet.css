@@ -582,34 +582,49 @@
 }
 
 .btn-outline-primary-passed {
-    color: #000000;
+    color: #666666;
+    border-color: #979797;
+}
+
+.btn-outline-primary-passed:hover {
+    color: #94c64a;
     border-color: #94c64a;
 }
 
-.btn-outline-primary-passed:hover:first-child{
-    display: none;
-    color: #ffffff;
-    background-color: #94c64a;
-}
-
 .btn-outline-primary-failed {
-    color: #000000;
+    color: #666666;
+    border-color: #979797;
+}
+.btn-outline-primary-failed:hover {
+    color: #f66384;
     border-color: #f66384;
 }
 
 .btn-outline-primary-blocked {
-    color: #000000;
+    color: #666666;
+    border-color: #979797;
+}
+.btn-outline-primary-blocked:hover {
+    color: #ddb50a;
     border-color: #ddb50a;
 }
 
 .btn-outline-primary-invalid {
-    color: #000000;
+    color: #666666;
+    border-color: #979797;
+}
+.btn-outline-primary-invalid:hover {
+    color: #5f01b9;
     border-color: #5f01b9;
 }
 
 
 .btn-outline-primary-skipped {
-    color: #000000;
+    color: #666666;
+    border-color: #979797;
+}
+.btn-outline-primary-skipped {
+    color: #979797;
     border-color: #979797;
 }
 
