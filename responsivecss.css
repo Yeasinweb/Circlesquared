@@ -59,3 +59,10 @@
       margin:0 0 0 0;
     } 
   }
+
+  @media only screen and (max-width:575px) {
+
+    .test_empty{
+      margin:20px 0 0 0;
+    } 
+  }
