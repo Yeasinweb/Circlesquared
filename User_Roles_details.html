@@ -12,57 +12,55 @@
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+<link rel="stylesheet" type="text/css" href="responsivecss.css">
+
+<link rel="icon" type="image/x-icon" href="./image/favicon.png">
+
 <script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
     <section class="header">
-        <div class="condainer-fluid">
+        <div class="container-fluid">
 
-            <div class="row mx-5 mt-4 align-items-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="left-icon">
-                        <div class="toggle  d-flex">
+            <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
+                <div class="col-auto col-md-2 col-lg-3">
+                        <div class="toggle d-flex">
                             <div class="form-check">
                                 <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
                                 <label class="form-check-label" for="flexCheckDefault">
                                 </label>
                               </div>
                               <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <img class="ms-5" src="./image/menu.svg">
+                                <img class="ms-lg-5 ms-2" src="./image/menu.svg">
                               </button>
                               
                         </div>
+                </div>
+                <div class="col-auto  col-md-8 col-lg-6">
+                    <div class="logo-header text-center">
+                        <a class="logo-item" href="Dashboard.html"><img class="logo-sized" src="./image/CircleSquared-01.svg"></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 align-items-center">
-                    <div class="logo">
-                        <div class="logo-item">
-                            <a href="Dashboard.html"><img src="./image/CircleSquared-01.svg"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 text-end">
-                    <div class="user-icon ">
-                        <div class="user">
+                <div class="col-auto col-md-2 col-lg-3">
+                    <div class="user-icon text-end">
                             <div class="dropdown">
                                 <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./image/usericon.svg">
+                                    <img class="user-size" src="./image/usericon.svg">
                                 </button>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                                  <li><a class="dropdown-item" href="#">User Invites</a></li>
+                                  <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                  <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
                                   <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
                                 </ul>
-                              </div>
-                        </div>
+                            </div>
                     </div>
                 </div>
+      
+           </div>
 
-            </div>
-
-            <div class="row mx-5 mt-4 justify-content-between align-items-center navheight">
+            <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
               <div class="col-md-auto d-flex">
                 <a href="User_Roles.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
@@ -122,7 +120,7 @@
 
   <section class="details">
     <div class="container-fluid">
-        <div class="row mx-5 align-items-center">
+        <div class="row mx-lg-5 align-items-center">
             <div class=" col-md-6 col-lg-12 mt-1">
                 <p>Team owner has access to all features and available to manage all aspects of application.</p>
             </div>
@@ -133,50 +131,50 @@
 
   <section class="Owner-details">
     <div class="container-fluid">
-        <div class="row mx-5 mt-3">
-            <div class="col-md-12 col-lg-12">
+        <div class="row mx-lg-5 mt-3">
+            <div class="col-md-12 col-sm-12 col-lg-12">
                 <div class="owner">
-                    <h6 class="#">Owner</h6>
-                     <p class="#"><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
+                    <h6>Owner</h6>
+                     <p><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
                 </div>
             </div>
         </div>
 
-        <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Create/update</h6>
+        <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="update">
+                     <h6>Create/update</h6>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="ownersss">
                      <p ><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
                 </div>
             </div>
          </div>
 
-         <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Remove</h6>
+         <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="remove">
+                     <h6>Remove</h6>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="has">
                      <p ><small>Team and available to manage all aspects o owner has access to all features and available to manage all aspects of application.</small></p>
                 </div>
             </div>
          </div>
 
-         <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Access control</h6>
+         <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="control">
+                     <h6>Access control</h6>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
-                     <p ><small>Team owner has access to all features and and available to manage all aspects o available to manage all aspects of application.</small></p>
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="has">
+                     <p><small>Team owner has access to all features and and available to manage all aspects o available to manage all aspects of application.</small></p>
                 </div>
             </div>
          </div>
@@ -187,49 +185,49 @@
 
   <section class="Owner-details mt-5">
     <div class="container-fluid">
-        <div class="row mx-5 mt-3">
+        <div class="row mx-lg-5 mt-3">
             <div class="col-md-12 col-lg-12">
                 <div class="owner">
-                    <h6 class="#">Project integrations</h6>
-                     <p class="#"><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
+                    <h6>Project integrations</h6>
+                     <p><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
                 </div>
             </div>
         </div>
 
-        <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
+        <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="view">
                      <h6 class="#">View</h6>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
-                     <p ><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="team">
+                     <p><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
                 </div>
             </div>
          </div>
 
-         <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Add/update</h6>
+         <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="and">
+                     <h6>Add/update</h6>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="and">
                      <p ><small>Team and available to manage all aspects o owner has access to all features and available to manage all aspects of application.</small></p>
                 </div>
             </div>
          </div>
 
-         <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Remove</h6>
+         <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="Remove">
+                     <h6>Remove</h6>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="has">
                      <p ><small>Team owner has access to all features and and available to manage all aspects o available to manage all aspects of application.</small></p>
                 </div>
             </div>
@@ -241,50 +239,50 @@
 
   <section class="Owner-details mt-5">
     <div class="container-fluid">
-        <div class="row mx-5 mt-3">
+        <div class="row mx-lg-5 mt-3">
             <div class="col-md-12 col-lg-12">
                 <div class="owner">
-                    <h6 class="#">Test cases</h6>
-                     <p class="#"><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
+                    <h6>Test cases</h6>
+                     <p><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
                 </div>
             </div>
         </div>
 
-        <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Repository</h6>
+        <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="Repository">
+                     <h6>Repository</h6>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
-                     <p ><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
-                </div>
-            </div>
-         </div>
-
-         <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Create/update</h6>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
-                     <p ><small>Team and available to manage all aspects o owner has access to all features and available to manage all aspects of application.</small></p>
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="has">
+                     <p><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
                 </div>
             </div>
          </div>
 
-         <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Change sort order</h6>
+         <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="update">
+                     <h6>Create/update</h6>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
-                     <p ><small>Team owner has access to all features and and available to manage all aspects o available to manage all aspects of application.</small></p>
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="and">
+                     <p><small>Team and available to manage all aspects o owner has access to all features and available to manage all aspects of application.</small></p>
+                </div>
+            </div>
+         </div>
+
+         <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="sort">
+                     <h6>Change sort order</h6>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="Owner has">
+                     <p><small>Team owner has access to all features and and available to manage all aspects o available to manage all aspects of application.</small></p>
                 </div>
             </div>
          </div>
@@ -295,50 +293,50 @@
 
   <section class="Owner-details mt-5 pb-5">
     <div class="container-fluid">
-        <div class="row mx-5 mt-3">
+        <div class="row mx-lg-5 mt-3">
             <div class="col-md-12 col-lg-12">
                 <div class="owner">
-                    <h6 class="#">Test suites</h6>
-                     <p class="#"><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
+                    <h6>Test suites</h6>
+                     <p><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
                 </div>
             </div>
         </div>
 
-        <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Create/update</h6>
+        <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="Create">
+                     <h6>Create/update</h6>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
-                     <p ><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
-                </div>
-            </div>
-         </div>
-
-         <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Change suite position</h6>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
-                     <p ><small>Team and available to manage all aspects o owner has access to all features and available to manage all aspects of application.</small></p>
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="Team">
+                     <p><small>Team owner has access to all features and available to manage all aspects of application.</small></p>
                 </div>
             </div>
          </div>
 
-         <div class="row mx-5 mt-3 border-bottom">
-            <div class="col-md-6 col-lg-2">
-                <div class="">
-                     <h6 class="#">Remove</h6>
+         <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="Change">
+                     <h6>Change suite position</h6>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-10">
-                <div class="">
-                     <p ><small>Team owner has access to all features and and available to manage all aspects o available to manage all aspects of application.</small></p>
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="manage">
+                     <p><small>Team and available to manage all aspects o owner has access to all features and available to manage all aspects of application.</small></p>
+                </div>
+            </div>
+         </div>
+
+         <div class="row mx-lg-5 mt-3 border-bottom">
+            <div class="col-md-2 col-sm-3 col-lg-2">
+                <div class="Remove">
+                     <h6>Remove</h6>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-9 col-lg-10">
+                <div class="Teams">
+                     <p><small>Team owner has access to all features and and available to manage all aspects o available to manage all aspects of application.</small></p>
                 </div>
             </div>
          </div>
