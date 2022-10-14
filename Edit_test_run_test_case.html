@@ -10,56 +10,56 @@
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+<link rel="stylesheet" type="text/css" href="responsivecss.css">
+
+<link rel="icon" type="image/x-icon" href="./image/favicon.png">
+
+<script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
     <section class="header">
 
-        <div class="condainer-fluid">
+      <div class="container-fluid">
 
-            <div class="row mx-5 mt-4 align-items-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="left-icon">
-                        <div class="toggle  d-flex">
-                            <div class="form-check">
-                                <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                </label>
-                              </div>
-                              <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <img class="ms-5" src="./image/menu.svg">
-                              </button>
-                              
-                        </div>
+        <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
+      <div class="col-auto col-md-2 col-lg-3">
+              <div class="toggle d-flex">
+                  <div class="form-check">
+                      <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                      </label>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 align-items-center">
-                    <div class="logo">
-                        <div class="logo-item">
-                            <a href="Dashboard.html"><img src="./image/CircleSquared-01.svg"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 text-end">
-                    <div class="user-icon ">
-                        <div class="user">
-                            <div class="dropdown">
-                                <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./image/usericon.svg">
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                                  <li><a class="dropdown-item" href="#">User Invites</a></li>
-                                  <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
-                                </ul>
-                              </div>
-                        </div>
-                    </div>
-                </div>
+                    <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      <img class="ms-lg-5 ms-2" src="./image/menu.svg">
+                    </button>
+                    
+              </div>
+      </div>
+      <div class="col-auto  col-md-8 col-lg-6">
+          <div class="logo-header text-center">
+              <a class="logo-item" href="Dashboard.html"><img class="logo-sized" src="./image/CircleSquared-01.svg"></a>
+          </div>
+      </div>
+      <div class="col-auto col-md-2 col-lg-3">
+          <div class="user-icon text-end">
+                  <div class="dropdown">
+                      <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img class="user-size" src="./image/usericon.svg">
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
+                        <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+                      </ul>
+                  </div>
+          </div>
+      </div>
+  
+  </div>
       
-            </div>
-      
-            <div class="row mx-5 mt-4 justify-content-between align-items-center navheight">
+            <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
               <div class="col-md-auto d-flex">
                 <img src="./image/left_arrow.svg"><h4 class="ms-3">Edit Test Case</h4>
               </div>
@@ -109,9 +109,9 @@
 
 <!--------Test Case Nam start -->
 
-        <div class="row mx-5 mt-4">
+        <div class="row mx-lg-5 mt-4">
             
-            <div class="col-md-6 col-lg-12">
+            <div class="col-md-12 col-lg-12">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Test Case Name</label>
                     <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Rootnext">
@@ -123,9 +123,9 @@
 
         <!--------Precondition start -->
 
-        <div class="row mx-5 mt-1">
+        <div class="row mx-lg-5 mt-1">
             
-            <div class="col-md-6 col-lg-12">
+            <div class="col-md-12 col-lg-12">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Precondition</label>
                     <input type="type" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="rootnext">
@@ -137,9 +137,9 @@
 
           <!--------Expected Result start -->
 
-          <div class="row mx-5 mt-1">
+          <div class="row mx-lg-5 mt-1">
             
-            <div class="col-md-6 col-lg-12">
+            <div class="col-md-12 col-lg-12">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Expected Result</label>
                     <input type="type" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="rootnext">
@@ -151,9 +151,9 @@
 
           <!--------Test Case Steps start -->
 
-          <div class="row mx-5 mt-1">
+          <div class="row mx-lg-5 mt-1">
             
-            <div class="col-md-6 col-lg-12">
+            <div class="col-md-12 col-lg-12">
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Test Case Steps</label>
                     <input type="type" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="rootnext">
@@ -165,7 +165,7 @@
 
             <!--------Attachments start -->
 
-            <div class="row mx-5 mt-1 border-bottom pb-2">
+            <div class="row mx-lg-5 mt-1 border-bottom pb-2">
                 <div class="col-md-6 col-lg-12 mt-3">
                     <div class="title">
                     <h6>Attachments</h6>
@@ -177,7 +177,7 @@
 
             <!--------add Attachments start -->
 
-            <div class="row mx-5 mt-4">
+            <div class="row mx-lg-5 mt-4">
                 <div class="col-md">
                     <div class="d-flex align-items-center m-0 p-0">
                         <button type="button" class="btn d-flex align-items-center m-0 p-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -191,8 +191,8 @@
 
              <!--------Test Case Steps with gherkin start -->
 
-             <div class="row mx-5 mt-4">
-                <div class="col-md-6 col-lg-11 d-flex align-items-center">
+             <div class="row mx-lg-5 mt-4">
+                <div class="col-md-4 col-sm-6 col-lg-11 d-flex align-items-center">
                     <h6 class="me-3">Test Case Steps</h6>
                     <div class="mb-0">
                         <div class="input-group">
@@ -204,7 +204,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-1 d-flex align-items-center">
+                <div class="col-md-4 col-sm-6 col-lg-1 d-flex align-items-center">
                     <p class="mt-2 me-2">Raw</p>
                     <div class="form-check form-switch text-end">
                         <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
@@ -216,19 +216,19 @@
 
             <!----Given start-------->
 
-            <div class="row mx-5 mt-4">
-                <div class="col-md-6 col-lg-1">
+            <div class="row mx-lg-5 mt-4">
+                <div class="col-md-2 col-lg-1">
                    <h5>Given</h5>
                 </div>
-                <div class="col-md-6 col-lg-10">
+                <div class="col-md-8 col-lg-10">
                     <p>Consectetur adipiscing elit. Nullam nec risus quis quam vehicula luctus. Cras ut ornare purus. Interdum et malesuada fames ac ante ipsum, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec risus quis quam vehicula luctus. Cras ut ornare purus. Interdum et malesuada fames ac ante ipsum</p>
                  </div>
             </div>
-            <div class="row mx-5 mt-4">
-                <div class="col-md-6 col-lg-1">
+            <div class="row mx-lg-5 mt-4">
+                <div class="col-md-2 col-lg-1">
                    <h5>Scenario</h5>
                 </div>
-                <div class="col-md-6 col-lg-10">
+                <div class="col-md-8 col-lg-10">
                     <p>Adipiscing elit. Nullam nec risus quis quam vehicula luctus. Cras ut ornare purus. Interdum et malesuada fames ac ante ipsum, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec risus quis quam vehicula luctus. Cras ut ornare purus. Interdum et malesuada fames ac ante ipsum</p>
                  </div>
             </div>
@@ -237,8 +237,8 @@
 
             <!----------Text start------------>
 
-            <div class="row mx-5 colorborder">
-                <div class="col-md-6 col-lg-12 p-5">
+            <div class="row mx-lg-5 colorborder">
+                <div class="col-md-12 col-lg-12 p-5">
                     <h6>Given</h6>
                     <p><b>When</b> Go to sign up page https://qase.io/login<br>
                     <b>Then</b> Sign up page is shown</p>
@@ -257,7 +257,7 @@
 
              <!----------Button start------------>
 
-             <div class="row mx-5">
+             <div class="row mx-lg-5">
                 <div class="col-md-6 col-lg-12 mt-4">
                     <button type="button" class="btn btn-outline-secondary">When</button>
                     <button type="button" class="btn btn-outline-success ms-3">Then</button>
@@ -269,8 +269,8 @@
 
                 <!--------Save start -->
 
-                <div class="row mx-5 mt-3 pb-5 mt-5">
-                    <div class="col-md-6 col-lg-12">
+                <div class="row mx-lg-5 pb-5 mt-5">
+                    <div class="col-md-12 col-lg-12">
                         <a href="testrun_details.html"> <button type="button" class="btn btn-dark">Save</button></a>
                         <button type="button" class="btn btn-secondarydelete  ms-3">Cancel</button>
                     </div>
