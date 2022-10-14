@@ -12,57 +12,55 @@
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+<link rel="stylesheet" type="text/css" href="responsivecss.css">
+
+<link rel="icon" type="image/x-icon" href="./image/favicon.png">
+
 <script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
     <section class="header">
-        <div class="condainer-fluid">
+      <div class="container-fluid">
 
-            <div class="row mx-5 mt-4 align-items-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="left-icon">
-                        <div class="toggle  d-flex">
-                            <div class="form-check">
-                                <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                </label>
-                              </div>
-                              <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <img class="ms-5" src="./image/menu.svg">
-                              </button>
-                              
-                        </div>
+        <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
+            <div class="col-auto col-md-2 col-lg-3">
+                    <div class="toggle d-flex">
+                        <div class="form-check">
+                            <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            </label>
+                          </div>
+                          <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img class="ms-lg-5 ms-2" src="./image/menu.svg">
+                          </button>
+                          
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 align-items-center">
-                    <div class="logo">
-                        <div class="logo-item">
-                            <a href="Dashboard.html"><img src="./image/CircleSquared-01.svg"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 text-end">
-                    <div class="user-icon ">
-                        <div class="user">
-                            <div class="dropdown">
-                                <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./image/usericon.svg">
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                                  <li><a class="dropdown-item" href="#">User Invites</a></li>
-                                  <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
-                                </ul>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+            <div class="col-auto  col-md-8 col-lg-6">
+                <div class="logo-header text-center">
+                    <a class="logo-item" href="Dashboard.html"><img class="logo-sized" src="./image/CircleSquared-01.svg"></a>
+                </div>
+            </div>
+            <div class="col-auto col-md-2 col-lg-3">
+                <div class="user-icon text-end">
+                        <div class="dropdown">
+                            <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="user-size" src="./image/usericon.svg">
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                              <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
+                              <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+  
+       </div>
 
-            <div class="row mx-5 mt-4 justify-content-between align-items-center navheight">
+            <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
               <div class="col-md-auto">
                 <a href="#" class="text-decoration-none text-reset"> <h4>Invites</h4></a>
               </div>
@@ -119,18 +117,18 @@
 
   <section class="details">
     <div class="container-fluid">
-        <div class="row mx-5 mt-3 align-items-center">
+        <div class="row mx-lg-5 mt-3 align-items-center">
 
-            <div class=" col-md-6 col-lg-2 mt-1">
+            <div class=" col-md-2 col-sm-4 col-lg-2 mt-1">
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Invite new member
               </button>
             </div>
-            <div class=" col-md-6 col-lg-2 mt-1">
+            <div class=" col-md-4 col-sm-4 col-lg-2 mt-1">
                 <input class="form-control" type="text" placeholder="Search for team member" aria-label=".form-control-lg example">
             </div>
 
-            <div class=" col-md-6 col-lg-8 mt-1">
+            <div class=" col-md-6 col-sm-4 col-lg-8 mt-1">
               <div class="dropdown">
                 <button class="btn btn-white border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <h6 class="text-primary"> + Add filter</h6>
@@ -146,17 +144,17 @@
 
   <section class="Invites">
     <div class="container-fluid">
-        <div class="row mx-5 mt-5 pb-3">
-                    <div class="col-md-6 col-lg-4">
+        <div class="row mx-lg-5 mt-5 pb-3">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
                         <small><p class="text-muted"></p></small>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-3 col-sm-3 col-lg-3">
                         <small><p class="text-muted">Role</p></small>
                     </div>
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-2 col-sm-2 col-lg-2">
                         <small><p class="text-muted">Role title</p></small>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-3 col-sm-3 col-lg-3">
                         <small><p class="text-muted">Invitation sent</p></small>
                     </div>
         </div>
@@ -166,25 +164,25 @@
 
   <section class="Defect">
     <div class="container-fluid">
-        <div class="row mx-5 mt-5 border-bottom pb-3 align-items-center">
-                    <div class="col-md-6 col-lg-4">
+        <div class="row mx-lg-5 mt-5 border-bottom pb-3 align-items-center">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
                          <h6 class="ms-2">Yeasin Khan</h6>
                         <p class="ms-2"><small>yeasin.rootnext@gmail.com</small></p>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-3 col-sm-3 col-lg-3">
                         <p>Administrator</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-2 col-sm-2 col-lg-2">
                         <p>0123</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-2 col-sm-2 col-lg-2">
                         <p>	4 months ago</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-1">
+                    <div class="col-md-1 col-sm-1 col-lg-1">
                         <div class="text-end">  
                             <div class="dropdown">
                                       <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -202,25 +200,25 @@
 
   <section class="Defect">
     <div class="container-fluid">
-        <div class="row mx-5 mt-3 border-bottom pb-3 align-items-center">
-                    <div class="col-md-6 col-lg-4">
+        <div class="row mx-lg-5 mt-3 border-bottom pb-3 align-items-center">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
                          <h6 class="ms-2">Yeasin Khan</h6>
                         <p class="ms-2"><small>yeasin.rootnext@gmail.com</small></p>
                     </div>
 
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-3 col-sm-3 col-lg-3">
                         <p>Member</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-2 col-sm-2 col-lg-2">
                         <p>123</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-2 col-sm-2 col-lg-2">
                         <p>	2 months ago</p>
                     </div>
 
-                    <div class="col-md-6 col-lg-1">
+                    <div class="col-md-1 col-sm-1 col-lg-1">
                         <div class="text-end">  
                             <div class="dropdown">
                                       <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">

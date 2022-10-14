@@ -12,57 +12,56 @@
 
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
+<link rel="stylesheet" type="text/css" href="responsivecss.css">
+
+<link rel="icon" type="image/x-icon" href="./image/favicon.png">
+
 <script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
 
     <section class="header">
-        <div class="condainer-fluid">
+      <div class="container-fluid">
 
-            <div class="row mx-5 mt-4 align-items-center">
-                <div class="col-md-6 col-lg-4">
-                    <div class="left-icon">
-                        <div class="toggle  d-flex">
-                            <div class="form-check">
-                                <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                </label>
-                              </div>
-                              <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                <img class="ms-5" src="./image/menu.svg">
-                              </button>
-                              
-                        </div>
+        <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
+            <div class="col-auto col-md-2 col-lg-3">
+                    <div class="toggle d-flex">
+                        <div class="form-check">
+                            <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            </label>
+                          </div>
+                          <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <img class="ms-lg-5 ms-2" src="./image/menu.svg">
+                          </button>
+                          
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 align-items-center">
-                    <div class="logo">
-                        <div class="logo-item">
-                            <a href="Dashboard.html"><img src="./image/CircleSquared-01.svg"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 text-end">
-                    <div class="user-icon ">
-                        <div class="user">
-                            <div class="dropdown">
-                                <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./image/usericon.svg">
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                                  <li><a class="dropdown-item" href="#">User Invites</a></li>
-                                  <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
-                                </ul>
-                              </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
+            <div class="col-auto  col-md-8 col-lg-6">
+                <div class="logo-header text-center">
+                    <a class="logo-item" href="Dashboard.html"><img class="logo-sized" src="./image/CircleSquared-01.svg"></a>
+                </div>
+            </div>
+            <div class="col-auto col-md-2 col-lg-3">
+                <div class="user-icon text-end">
+                        <div class="dropdown">
+                            <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="user-size" src="./image/usericon.svg">
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                              <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
+                              <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+  
+       </div>
 
-            <div class="row mx-5 mt-4 justify-content-between align-items-center navheight">
+            <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
               <div class="col-md-auto">
                 <a href="#" class="text-decoration-none text-reset"> <h4> User </h4></a>
               </div>
@@ -119,13 +118,13 @@
 
   <section class="details">
     <div class="container-fluid">
-        <div class="row mx-5 mt-3 align-items-center">
+        <div class="row mx-lg-5 mt-3 align-items-center">
 
-            <div class=" col-md-6 col-lg-2 mt-1">
+            <div class="col-md-2 col-lg-2 mt-1">
                 <input class="form-control" type="text" placeholder="Search for team member" aria-label=".form-control-lg example">
             </div>
 
-            <div class=" col-md-6 col-lg-8 mt-1 d-flex">
+            <div class=" col-md-8 col-lg-8 mt-1 d-flex">
               <div class="dropdown">
                 <button class="btn fillcolorproject border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Status
@@ -171,23 +170,23 @@
 
   <section class="Defect">
     <div class="container-fluid">
-        <div class="row mx-5 mt-5 pb-3">
-                    <div class="col-md-6 col-lg-4">
+        <div class="row mx-lg-5 mt-5 pb-3">
+                    <div class="col-md-4 col-lg-4">
                         <small><p class="text-muted">User</p></small>
                     </div>
-                    <div class="col-md-6 col-lg-1">
+                    <div class="col-md-1 col-lg-1">
                         <small><p class="text-muted">Status</p></small>
                     </div>
-                    <div class="col-md-6 col-lg-1">
+                    <div class="col-md-1 col-lg-1">
                         <small><p class="text-muted">Type</p></small>
                     </div>
-                    <div class="col-md-6 col-lg-1">
+                    <div class="col-md-1 col-lg-1">
                         <small><p class="text-muted">Role</p></small>
                     </div>
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-2 col-lg-2">
                         <small><p class="text-muted">Role title</p></small>
                     </div>
-                    <div class="col-md-6 col-lg-3">
+                    <div class="col-md-3 col-lg-3">
                         <small> <p class="text-muted">Last action</p></small>
                     </div>
             </div>
@@ -197,34 +196,34 @@
 
   <section class="Defect">
     <div class="container-fluid">
-        <div class="row mx-5 mt-5 border-bottom pb-3 align-items-center">
-                    <div class="col-md-6 col-lg-4">
+        <div class="row mx-lg-5 mt-5 border-bottom pb-3 align-items-center">
+                    <div class="col-md-4 col-lg-4">
                         <div class="row">
-                            <div class="col-md-6 col-lg-1">
+                            <div class="col-md-1 col-lg-1">
                                 <img class="mt-2" src="./image/image_40.jpg">
                             </div>
-                            <div class="col-md-6 col-lg-10 lh-1">
+                            <div class="col-md-10 col-lg-10 lh-1">
                                 <h5 class="ms-2">Yeasin Khan</h5>
                                 <p class="ms-2"><small>yeasin.rootnext@gmail.com</small></p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-1">
+                    <div class="col-md-1 col-lg-1">
                         <p>Status</p>
                     </div>
-                    <div class="col-md-6 col-lg-1">
+                    <div class="col-md-1 col-lg-1">
                         <p>Regular</p>
                     </div>
-                    <div class="col-md-6 col-lg-1">
+                    <div class="col-md-1 col-lg-1">
                         <p>Owner</p>
                     </div>
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-2 col-lg-2">
                         <p>UIUX Designer</p>
                     </div>
-                    <div class="col-md-6 col-lg-2">
+                    <div class="col-md-2 col-lg-2">
                         <p>19 minutes ago</p>
                     </div>
-                    <div class="col-md-6 col-lg-1">
+                    <div class="col-md-1 col-lg-1">
                         <div class="text-end">  
                                   <div class="dropdown">
                                       <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -243,12 +242,12 @@
 
   <section class="Defect">
     <div class="container-fluid">
-        <div class="row mx-5 mt-4  align-items-center">
-                    <div class="col-md-6 col-lg-1">
+        <div class="row mx-lg-5 mt-4  align-items-center">
+                    <div class="col-md-2 col-lg-2 col-xl-2 col-xxl-1">
                         <p>Rows per page:</p>
                     </div>
-                    <div class="col-md-6 col-lg-1">
-                        <div class="dropdown align-items-center">
+                    <div class="col-md-2 col-lg-1">
+                        <div class="dropdown ">
                             <button class="btn fillcolorproject dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                               5 &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
                                 <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
@@ -264,7 +263,7 @@
                           </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-1">
+                    <div class="col-md-4 col-lg-1">
                         <nav aria-label="...">
                             <ul class="pagination">
                               <li class="page-item disabled">
