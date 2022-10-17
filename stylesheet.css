@@ -74,14 +74,14 @@
     background-color:none;
 }
 
-.signh4::after{
+.sign_in1::after{
     background-image: url(image/signin_bottom.svg);
     content:"";
     width: 30px;
     height: 15px;
-    margin-left: 358px;
-    display: block;
+    margin: auto;
     margin-top: 10px;
+    display: block;
 }
 
 .formsign{
