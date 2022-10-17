@@ -4,12 +4,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>First Page</title>
+	<title>Circlesquared</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" type="text/css" href="responsivecss.css">
+	
+	<link rel="icon" type="image/x-icon" href="./image/favicon.png">
+	
+	<script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
 
 
 
@@ -20,45 +25,47 @@
 
 	<div class="signbg">
 		<div class="containerbox">
+			<div class="container">
 			<div class="row">
-				<div class="Close">
 					<div class="col-sm-12 col-lg-12 d-flex justify-content-end p-3">
 						<a href="index.html"><button type="button" class="btn-close" aria-label="Close" ></button></a>
 					</div>
 					<div class="signh4 text-center"> <b> Sign in &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a class="text-decoration-none text-reset" href="Signup.html"> Sign up </a> </b> </div>
-				</div>
 			</div>
-			<div class="formsign">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="row justify-content-center mt-5">
+					<div class="col-sm-12 col-md-12 col-lg-6">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Email*</label>
-							 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+							 <input type="email" class="form-control border-primary" id="exampleFormControlInput1" placeholder="email">
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-6">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Password*</label>
 							 <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6 col-md-6 col-lg-6 my-2">
-						<div class="Remember me">
-							<input type="checkbox" > Remember me
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-6 my-2">
-						<div class="social">
-							<a class="text-decoration-none text-reset" href="forgotpassword.html">Forgot your password?</a>
+
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div class="row">
+							<div class="col">
+								<input type="checkbox" > Remember me
+							</div>
+							<div class="col">
+								<div class="text-end">
+									<a class="text-decoration-none text-reset" href="forgotpassword.html">Forgot your password?</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12 my-4">
+				
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-6 my-4">
 						<div class="Sign">
 							<a class="text-decoration-none" href="Dashboard.html">
 							<div class="d-grid gap-2">
@@ -67,18 +74,23 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6 col-md-6 col-lg-6">
-						<p>Or login with</p>
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-6 gap-5">
-						<div class="social">
-						<img src="./image/Facebook.svg"> <img src="./image/google.svg">
+
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div class="row">
+							<div class="col">
+								<p>Or login with</p>
+							</div>
+							<div class="col">
+								<div class="text-end">
+									<img src="./image/Facebook.svg"> <img src="./image/google.svg">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
+		</div>
 		</div>
 			
 	</div>
