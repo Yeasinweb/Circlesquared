@@ -79,9 +79,10 @@
     content:"";
     width: 30px;
     height: 15px;
-    margin-top: 20px;
     display: block;
-    margin-left: 540px;
+    margin: auto;
+    margin-top: 20px;
+
 }
 
 .formsign{

@@ -4,12 +4,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>First Page</title>
+	<title>Circlesquared</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" type="text/css" href="responsivecss.css">
+	
+	<link rel="icon" type="image/x-icon" href="./image/favicon.png">
+	
+	<script src="https://kit.fontawesome.com/3899f4177b.js" crossorigin="anonymous"></script>
 
 
 
@@ -20,54 +25,74 @@
 
 	<div class="signbg">
 		<div class="containerbox">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="signh4 text-center"> <b> <a class="text-decoration-none text-reset" href="SignIn.html"> Sign in </a>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Sign up </b> </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12 p-3">
+						<div class="text-end">
+							<a href="index.html"><button type="button" class="btn-close" aria-label="Close" ></button></a>
+						</div>
+					</div>
+			</div>
+			<div class="row mt-3">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<div class="text-center">
+						<a class="text-decoration-none text-reset d-inline-block" href="SignIn.html">
+							<h5>Sign in</h5>	
+						</a>
+						<a class="text-decoration-none text-reset d-inline-block" href="Signup.html">
+							<h5 class="sign_in1 p-0 m-0 ms-5">Sign up</h5>	
+						</a>
+					</div>
 				</div>
 			</div>
-			<div class="formsign">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12">
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-12 col-lg-8">
+					<div class="border-bottom border-primary"></div>
+				</div>
+			</div>
+
+				<div class="row justify-content-center mt-5">
+					<div class="col-sm-12 col-md-12 col-lg-6">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">First Name*</label>
 							 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="enter your first name">
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12 my-1">
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-6 my-1">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Last Name*</label>
 							 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="enter your first name">
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12 my-1">
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-6 my-1">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">E-mail*</label>
 							 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="enter your email">
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 my-1">
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-6 my-1">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Password*</label>
 							 <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12 my-1">
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-6 my-1">
 						<div class="mb-3">
 							<label for="exampleFormControlInput1" class="form-label">Password Confirmation*</label>
 							 <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password confirmation">
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12 my-1">
+				<div class="row justify-content-center my-4">
+					<div class="col-sm-12 col-md-12 col-lg-6 my-1">
 						<div class="#">
 							<a class="text-decoration-none" href="Signupsuccess.html">
 							<div class="d-grid gap-2">
@@ -77,18 +102,21 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6 my-4">
-						<p>Or login with</p>
-					</div>
-					<div class="col-sm-6 gap-5 my-4">
-						<div class="social">
-						<img src="./image/Facebook.svg"> <img src="./image/google.svg">
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-12 col-lg-6">
+						<div class="row">
+							<div class="col">
+								<p>Or login with</p>
+							</div>
+							<div class="col">
+								<div class="text-end">
+									<img src="./image/Facebook.svg"> <img src="./image/google.svg">
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
+		</div>
 		</div>
 			
 	</div>
