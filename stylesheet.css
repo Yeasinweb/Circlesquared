@@ -51,8 +51,6 @@
 .signbg{
     background-image: url(image/ForgotPassword.jpg);
     height: 100vh;
-    margin: 0;
-    padding: 0;
     display: flex;
 }
 
