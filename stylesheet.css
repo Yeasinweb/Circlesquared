@@ -638,7 +638,7 @@
 }
 
 .height-bg{
-    height: vh 100%;
-    background-size: cover;
+    height: 900px;
+    background-color: #f1f1f1;
 }
 
