@@ -637,3 +637,8 @@
     border-color: #979797;
 }
 
+.height-bg{
+    height: vh 100%;
+    background-size: cover;
+}
+
