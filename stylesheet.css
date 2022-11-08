@@ -642,11 +642,11 @@
     background-color: #f1f1f1;
 }
 
-.circle-color{
+.circle-color-1{
     background-color: #adacac;
 }
 
-.borderline::after{
+.borderline1::after{
     content: "";
     display: block;
     top: 0;
