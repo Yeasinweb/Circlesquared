@@ -642,5 +642,20 @@
     background-color: #f1f1f1;
 }
 
+.circle-color{
+    background-color: #adacac;
+}
+
+.borderline::after{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 1px;
+    background-color: #AFAFAF;
+    margin-left: 25px;
+    margin-top: -10px;
+}
 
 
