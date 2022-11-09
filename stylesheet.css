@@ -670,4 +670,34 @@
     margin-top: -10px;
 }
 
+.bg-accepted{
+    background-color:#00A651 ;
+    height: 30px;
+    width: 80px;
+    padding:1px;
+    border-radius:5px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
 
+.bg-pending{
+    background-color:#ED1C24 ;
+    height: 30px;
+    width: 80px;
+    padding:1px;
+    border-radius:5px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
+.bg-denied{
+    background-color:#FFC20E ;
+    height: 30px;
+    width: 80px;
+    padding:1px;
+    border-radius:5px;
+    text-align: center;
+    align-items: center;
+}
