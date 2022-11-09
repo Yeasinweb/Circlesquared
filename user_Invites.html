@@ -283,7 +283,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <!------
@@ -327,14 +327,7 @@
 
           <div class="row">
             <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"> <small>Role title</small></label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Senior QSA">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"> <small>Role title</small></label>
+                    <label for="exampleInputEmail1" class="form-label"> <small>Role</small></label>
                     <select class="form-select" aria-label="Default select example">
                       <option selected>Member Defult</option>
                       <option value="1">Administrator</option>
@@ -343,43 +336,15 @@
           </div>
 
           <div class="row">
-            <div class="col-auto mt-2">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Read only
-                </label>
-              </div>
+            <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"> <small>Role title</small></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Senior QSA">
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-auto mt-2">
-              <small> <p class="text-muted">Read-only users don't count as a regular users (are not billed) and have only a read access (based on the role settings).</p> </small>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-auto mt-2">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                  Access
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-auto mt-2">
-              <small> <p class="text-muted">A user will receive access to all private projects in your workspace.</p> </small>
-            </div>
-          </div>
-
 
       </div>
 
-      <div class="modal-footer p-4">
+      <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Invite</button>
       </div>
