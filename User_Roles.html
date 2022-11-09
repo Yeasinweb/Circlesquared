@@ -120,7 +120,9 @@
         <div class="row mx-lg-5 mt-3 align-items-center">
 
             <div class=" col-md-6 col-lg-12 mt-1">
-                <button type="button" class="btn btn-primary">Create a new role</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create a new role
+              </button>
             </div>
             
         </div>
@@ -268,6 +270,386 @@
 
  
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+<!---------
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+------>
+      <div class="modal-body p-4">
+        
+        <div class="row">
+          <h4>Change role</h4>
+        </div>
+
+        <div class="row mt-4">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Title</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Description</label>
+            <input type="type" class="form-control" id="exampleInputPassword1">
+          </div>
+        </div>
+
+        <div class="row mt-2">
+          <div class="col-md-9 col-lg-9">
+            <h6></h6>
+          </div>
+          <div class="col-md-3 col-lg-3">
+            <h6>This role</h6>
+          </div>
+        </div>
+<!------------start side-->
+        <div class="row mt-4 g-0">
+          <div class="col-md-9 col-lg-9 border-end">
+            <div class="project">
+              <div class="text p-1">
+                <h6>Projects</h6>
+                <small> block contains rules which allow to manage projects.</small>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3">
+              <div class="col-3">
+                <h6>Create/update</6>
+              </div>
+              <div class="col-9">
+                <p><small>rule allow to create new projects and update its setting</small></p>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3">
+              <div class="col-3">
+                <h6>Remove</6>
+              </div>
+              <div class="col-9">
+                <p><small> This rule allows to delete projects</small></p>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3">
+              <div class="col-3">
+                <h6>Access control</6>
+              </div>
+              <div class="col-9">
+                <p><small>This rule allows to manage access to projects add or remove members.</small></p>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3">
+              <div class="col-3">
+                <h6>Import</6>
+              </div>
+              <div class="col-9">
+                <p><small>This rule allows to import test from various sources.</small></p>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3">
+              <div class="col-3">
+                <h6>Export</6>
+              </div>
+              <div class="col-9">
+                <p><small>This rule allow to export test cases.</small></p>
+              </div>
+            </div>
+
+          </div>
+          
+
+          <!------------end side-->
+
+          <div class="col-md-3 col-lg-3">
+            <div class="project">
+              <div class="text ms-4 d-flex py-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3 py-2">
+              <div class="text ms-4 d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3 py-2">
+              <div class="text ms-4 d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3 py-1">
+              <div class="text ms-4 d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3 py-2">
+              <div class="text ms-4 d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3 py-2">
+              <div class="text ms-4 d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-----2 nd line-->
+        <div class="row mt-4 g-0">
+          <div class="col-md-9 col-lg-9 border-end">
+            <div class="project">
+              <div class="text p-1">
+                <h6>Projects</h6>
+                <small> block contains rules which allow to manage projects.</small>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3">
+              <div class="col-3">
+                <h6>Create/update</6>
+              </div>
+              <div class="col-9">
+                <p><small>rule allow to create new projects and update its setting</small></p>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3">
+              <div class="col-3">
+                <h6>Remove</6>
+              </div>
+              <div class="col-9">
+                <p><small> This rule allows to delete projects</small></p>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3">
+              <div class="col-3">
+                <h6>Access control</6>
+              </div>
+              <div class="col-9">
+                <p><small>This rule allows to manage access to projects add or remove members.</small></p>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3">
+              <div class="col-3">
+                <h6>Import</6>
+              </div>
+              <div class="col-9">
+                <p><small>This rule allows to import test from various sources.</small></p>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3">
+              <div class="col-3">
+                <h6>Export</6>
+              </div>
+              <div class="col-9">
+                <p><small>This rule allow to export test cases.</small></p>
+              </div>
+            </div>
+
+          </div>
+          
+
+          <!------------end side-->
+
+          <div class="col-md-3 col-lg-3">
+            <div class="project">
+              <div class="text ms-4 d-flex py-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3 py-2">
+              <div class="text ms-4 d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3 py-2">
+              <div class="text ms-4 d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3 py-1">
+              <div class="text ms-4 d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3 py-2">
+              <div class="text ms-4 d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row border-bottom mt-3 py-2">
+              <div class="text ms-4 d-flex">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Yes
+                  </label>
+                </div>
+                <div class="form-check ms-5">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!--------------->
+
+      </div>
+
+      <div class="modal-footer p-4">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
