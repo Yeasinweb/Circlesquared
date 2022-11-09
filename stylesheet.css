@@ -702,6 +702,17 @@
     align-items: center;
 }
 
+.bg-deactivated{
+    background-color:#ED1C24 ;
+    height: 30px;
+    width: 90px;
+    padding:1px;
+    border-radius:5px;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+
 .single::after{
 content: "";
 display: block;
