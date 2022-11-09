@@ -282,7 +282,7 @@
   <!-- Button trigger modal -->
 
 
-<!-- Modal -->
+<!-- Modal 1 -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -299,7 +299,7 @@
           <div class="row mt-3">
             
                     <div class="col-md-auto">
-                        <a class="text-decoration-none text-reset" href="#"><h6>Single</h6></a>
+                        <a class="text-decoration-none text-reset" href="#"><h6 class="text-primary single">Single</h6></a>
                      </div>
 
                      <div class="col-md-auto ms-5">
@@ -356,7 +356,7 @@
 
 <!-------modal 2-->
 
-<div class="modal fade mt-5" id="Bulk" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="Bulk" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <!-----
@@ -381,7 +381,7 @@
             <div class="col-md-auto ms-5">
             
             <button type="button" class="btn m-0 p-0" data-bs-toggle="modal" data-bs-target="#Bulk">
-              <h6>Bulk</h6>
+              <h6 class="text-primary bulk">Bulk</h6>
             </button> 
             
             </div>
@@ -390,7 +390,7 @@
 
         <div class="row mt-4">
           <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"> <small>Role title</small></label>
+                  <label for="exampleInputEmail1" class="form-label"> <small>Role</small></label>
                   <select class="form-select" aria-label="Default select example">
                     <option selected>Member Defult</option>
                     <option value="1">Administrator</option>
@@ -398,46 +398,31 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"> <small>Role title</small></label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Senior QSA">
+          </div>
+        </div>
+
         <div class="row mt-3">
           <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label"><small>Email list</small></label>
                   <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px"></textarea>
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px">yeasin.khan@rootnext.com</textarea>
                   </div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-auto mt-2">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Read only
-              </label>
-            </div>
+               <p>Upload csv file*</p>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-auto mt-2">
-            <small> <p class="text-muted">Read-only users don't count as a regular users (are not billed) and have only a read access (based on the role settings).</p> </small>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-auto mt-2">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Access
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-auto mt-2">
-            <small> <p class="text-muted">A user will receive access to all private projects in your workspace.</p> </small>
+          <div class="col-auto">
+            <small> <p class="text-muted">Click  this icon for  upload  your file <img class="ms-3" src="./image/upload csv file.svg"></p> </small>
           </div>
         </div>
 
