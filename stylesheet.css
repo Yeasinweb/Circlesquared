@@ -495,7 +495,6 @@
 
 .table_heading {
     background-color: #e6e6e6;
-    
 }
 
 .logosize{
@@ -735,8 +734,18 @@ margin-top: 7px;
     margin-top: 7px;
     }
 
-    .project{
-        background-color: #F3F3F3;
-        margin: 0;
-        padding: 0;
-    }
+.project{
+    background-color: #F3F3F3;
+    margin: 0;
+     padding: 0;
+}
+
+.package{
+    border: #e6e5e5 solid 1px;
+}
+
+.package:hover{
+    border: #0d6efd solid 1px;
+    transition: all 0.5s;
+}
+
