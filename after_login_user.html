@@ -10,6 +10,8 @@
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css"/>
+
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 <link rel="stylesheet" type="text/css" href="responsivecss.css">
@@ -21,164 +23,215 @@
 </head>
 <body>
 
-    <section class="header">
-      <div class="container-fluid">
+  <section class="header">
+    <div class="container-fluid">
 
-        <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
-      <div class="col-auto col-md-2 col-lg-3">
-              <div class="toggle d-flex">
-                  <div class="form-check">
-                      <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
-                      <label class="form-check-label" for="flexCheckDefault">
-                      </label>
-                    </div>
-                    <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      <img class="ms-lg-5 ms-2" src="./image/menu.svg">
-                    </button>
-                    
-              </div>
-      </div>
-      <div class="col-auto  col-md-8 col-lg-6">
-          <div class="logo-header text-center">
-              <a class="logo-item" href="Dashboard.html"><img class="logo-sized" src="./image/CircleSquared-01.svg"></a>
-          </div>
-      </div>
-      <div class="col-auto col-md-2 col-lg-3">
-          <div class="user-icon text-end">
-                  <div class="dropdown">
-                      <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <img class="user-size" src="./image/usericon.svg">
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                        <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
-                        <li><a class="dropdown-item" href="subscription.html">Subscription</a></li>
-                        <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
-                      </ul>
+      <div class="row mx-lg-5 mt-4 align-items-center justify-content-between">
+    <div class="col-auto col-md-2 col-lg-3">
+            <div class="toggle d-flex">
+                <div class="form-check">
+                    <input class="form-check-input bg-primary checkheight" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                    </label>
                   </div>
-          </div>
-      </div>
-  
-  </div>
-      
-            <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
-                <!-------
-              <div class="col-md-auto d-flex">
-                <a href="#"> <i class="fa-solid fa-left-long mt-2"></i></a> <h4 class="ms-3">Create defect</h4>
-              </div>
-              ------>
-              <div class="col-md-auto m-0 p-0">
-               
-                <div class="collapse" id="collapseExample">
-                  <div class="card card-body">
-                    <nav class="navbar navbar-expand bg-primary">
-                      <div class="container">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav gap-4">
-                                <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle text-white  fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Project
-                                  </a>
-                                  <ul class="dropdown-menu mt-2">
-                                    <li><a class="dropdown-item" href="My_Projects.html">My Project</a></li>
-                                    <li><a class="dropdown-item" href="Add_Project.html">Add Project</a></li>
-                                  </ul>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link text-white fw-semibold" href="#">Workspace</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link text-white fw-semibold" href="#">Dashboards</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link text-white fw-semibold" href="#">Queries</a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link text-white fw-semibold" href="#">Apps</a>
-                                </li>
-                            </ul>
-                        </div>
-                      </div>
-                    </nav>
-                  </div>
-                </div>
-      
-              </div>
-          </div>
-
-              </div> 
-          </section>
-    
-<!--------Edit test run start -->
-	
-<section class="Edit test run">
-    <div class="container">
-
-        <div class="row justify-content-center">
-            <div class="col-8">
-                 <div class="Invoice text-center">
-                    <img src="./image/profile.png">
-                 </div>
-            </div>        
-         </div>
-
-         <div class="row justify-content-center mt-2"> 
-            <div class="col-1">
-                <div class="Invoice text-center">
-                   <input type="file" class="form-control border-0" style="width: 100px;" id="inputGroupFile02">
-                </div>
-            </div>       
-         </div>
-
-         <div class="row justify-content-center mt-5"> 
-            <div class="col-3">
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Name*</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your name">
-                </div>
-
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email*</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your email">
-                </div>
-
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Phone*</label>
-                    <input type="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your phone">
-                </div>
-
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Date of birth*</label>
-                    <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="11 / 21 / 2022">
-                </div>
-
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Address*</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your address">
-                </div>
-
-            </div>       
-         </div>
-
-       
-         <div class="row row mt-4 justify-content-center">
-            <div class="col-2">
-                <div class="text-center mb-5">
-                   <a href="Register_with_us_confir.html"> <button type="button" class="btn btn-dark">Save change</button> </a>
-                </div>
+                  <button class="btn m-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    <img class="ms-lg-5 ms-2" src="./image/menu.svg">
+                  </button>
+                  
             </div>
-         </div>
-
     </div>
+    <div class="col-auto  col-md-8 col-lg-6">
+        <div class="logo-header text-center">
+            <a class="logo-item" href="Dashboard.html"><img class="logo-sized" src="./image/CircleSquared-01.svg"></a>
+        </div>
+    </div>
+    <div class="col-auto col-md-2 col-lg-3">
+        <div class="user-icon text-end">
+                <div class="dropdown">
+                    <button class="btn btn-white border-0 p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="user-size" src="./image/usericon.svg">
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                      <li><a class="dropdown-item" href="Invite_new_user.html">User Invites</a></li>
+                      <li><a class="dropdown-item" href="subscription.html">Subscription</a></li>
+                      <li><a class="dropdown-item" href="index.html">Sign Out</a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+</div>
+    
+          <div class="row mx-lg-5 mt-4 justify-content-between align-items-center navheight">
+              <!-------
+            <div class="col-md-auto d-flex">
+              <a href="#"> <i class="fa-solid fa-left-long mt-2"></i></a> <h4 class="ms-3">Create defect</h4>
+            </div>
+            ------>
+            <div class="col-md-auto m-0 p-0">
+             
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <nav class="navbar navbar-expand bg-primary">
+                    <div class="container">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                          <ul class="navbar-nav gap-4">
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white  fw-semibold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Project
+                                </a>
+                                <ul class="dropdown-menu mt-2">
+                                  <li><a class="dropdown-item" href="My_Projects.html">My Project</a></li>
+                                  <li><a class="dropdown-item" href="Add_Project.html">Add Project</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" href="#">Workspace</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" href="#">Dashboards</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" href="#">Queries</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white fw-semibold" href="#">Apps</a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+    
+            </div>
+        </div>
+
+            </div> 
+        </section>
+  
+<!--------Edit test run start -->
+
+<section class="Edit test run">
+  <div class="container">
+
+      <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12 col-sm-12">
+               <div class="Invoice text-center">
+                  <img src="./image/profile.png">
+               </div>
+          </div>        
+       </div>
+
+       <div class="row justify-content-center mt-2"> 
+          <div class="col-lg-2 col-md-2 col-sm-2">
+              <div class="text-center">
+                <!----
+                 <input type="file" class="form-control border-0 mx-auto" style="width: 100px;" id="inputGroupFile02">
+                  ---->
+                 <div class="my-dropzone">Update Image</div>
+              </div>
+          </div>       
+       </div>
+
+       <div class="row justify-content-center mt-5"> 
+          <div class="col-lg-4 col-md-8 col-sm-12">
+             <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Fast Name*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your first name">
+                </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Last Name*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your last name">
+                </div>
+                </div>
+             </div>
+
+              <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email*</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your email">
+              </div>
+
+              <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Phone*</label>
+                  <input type="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your phone">
+              </div>
+
+              <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Date of birth*</label>
+                  <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="11 / 21 / 2022">
+              </div>
+
+              <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Address*</label>
+                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your address">
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">City*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your city">
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">State*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your state">
+                </div>
+                </div>
+             </div>
+
+             <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Zip code*</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your zip code">
+              </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Country*</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your country">
+              </div>
+              </div>
+           </div>
+
+          </div>       
+       </div>
+
+     
+       <div class="row row mt-4 justify-content-center">
+          <div class="col-lg-2 col-md-2 col-sm-6">
+              <div class="text-center mb-5">
+                 <a href="Register_with_us_confir.html"> <button type="button" class="btn btn-dark"> Save change </button> </a>
+              </div>
+          </div>
+       </div>
+
+  </div>
 </section> 
 
 
 
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+
+<script>
+  // Dropzone has been added as a global variable.
+  const dropzone = new Dropzone("div.my-dropzone", { url: "/file/post" });
+</script>
 
 </body>
 </html>
