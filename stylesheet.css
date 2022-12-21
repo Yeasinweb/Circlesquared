@@ -750,5 +750,17 @@ margin-top: 7px;
 }
 
 .bg-color{
-    box-shadow: 2px 2px 10px rgb(231, 231, 231);
+    box-shadow: 2px 2px 10px rgb(212, 212, 212);
+    position: fixed;
+    width: 50%;
+    top: 70px;
+    left: 50px;
+    background-color: #ffffff;
+
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
 }
