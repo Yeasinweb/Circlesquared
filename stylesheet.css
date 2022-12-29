@@ -764,3 +764,7 @@ margin-top: 7px;
     outline: 0;
     box-shadow: none;
 }
+
+.apps:hover{
+    color:#0d6efd ;
+}
