@@ -74,3 +74,24 @@
       margin:60px 0 0 0;
     } 
   }
+
+/*----------------------BuyNoir-----------------------*/
+
+  @media only screen and (max-width:575px) {
+
+    .Order_image{
+      margin-top: 20px;
+    }
+    .order_text{
+      margin-top: 30px;
+      margin-left: 20px;
+    }
+    .qty_text{
+      text-align: end;
+      margin-right: 10px;
+    }
+
+    .qty_text_al{
+      margin-right: 10px;
+    }
+  }
